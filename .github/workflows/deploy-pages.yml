@@ -20,16 +20,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout source
         uses: actions/checkout@v4
 
-      - name: Show project root
+      - name: Show project files
         run: |
           pwd
           ls -la
-
-      - name: Show vite config
-        run: cat vite.config.js
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -43,7 +40,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Check built index
+      - name: Show built index
         run: cat dist/index.html
 
       - name: Upload Pages artifact
