@@ -142,6 +142,10 @@ const headerCopy = {
         title: "기존 고객 관리",
         description: "계약 완료 고객의 라이선스, 갱신 일정, 추가 영업 기회를 관리합니다.",
     },
+    maintenanceContracts: {
+        title: "유지보수 계약관리",
+        description: "유지보수 계약의 만료 일정, 제품/수량, 청구 방식, 담당자 정보를 통합 관리합니다.",
+    },
     recommendedActions: {
         title: "추천 액션",
         description: "오늘 처리할 일과 위험 딜 후속 액션을 우선순위로 확인합니다.",
@@ -158,6 +162,174 @@ const currentUser = {
     email: "demo@salesops.ai",
 };
 const pricingSettingsStorageKey = "sales-crm-pricing-settings";
+
+const maintenanceContracts = [
+    {
+        id: "mt-001",
+        contractName: "LG CNS 유지보수 계약",
+        endUser: "LG전자",
+        contractCompany: "LG CNS",
+        businessNumber: "123-45-67890",
+        startDate: "2026.01.01",
+        endDate: "2026.06.30",
+        renewalMonth: "2026년 06월",
+        status: "갱신예정",
+        owner: "정유진",
+        annualAmount: 24000000,
+        monthlyAmount: 2000000,
+        billingCycle: "매월",
+        billingMethod: "정발행 후 XML 업로드",
+        billingDay: "당월 25일",
+        billingStatus: "XML업로드대기",
+        documents: "검수확인서, 거래명세서",
+        contactName: "김담당",
+        contactEmail: "billing@lgcns.example",
+        inspectionIncluded: true,
+        inspectionCount: "연 1회",
+        memo: "발행 후 당일 고객사 구매시스템에 XML 업로드 필요",
+        products: [
+            { productName: "SecuKit NX", category: "공동인증", quantity: 2, licenseType: "Copy", inspection: "포함 / 연 1회", scope: "패치·장애지원" },
+            { productName: "SGIxLinker", category: "전자보증연계", quantity: 2, licenseType: "Copy", inspection: "미포함", scope: "장애지원" },
+        ],
+    },
+    {
+        id: "mt-002",
+        contractName: "삼성SDS 인증솔루션 유지보수",
+        endUser: "삼성전자",
+        contractCompany: "삼성SDS",
+        businessNumber: "234-56-78901",
+        startDate: "2026.01.01",
+        endDate: "2026.06.30",
+        renewalMonth: "2026년 06월",
+        status: "갱신예정",
+        owner: "정유진",
+        annualAmount: 18000000,
+        monthlyAmount: 1500000,
+        billingCycle: "매월",
+        billingMethod: "정발행",
+        billingDay: "당월 5일",
+        billingStatus: "발행예정",
+        documents: "없음",
+        contactName: "이담당",
+        contactEmail: "account@sds.example",
+        inspectionIncluded: false,
+        inspectionCount: "미포함",
+        memo: "일반 정발행 후 고객 수신 확인",
+        products: [
+            { productName: "SecuKit HTML5", category: "공동인증", quantity: 3, licenseType: "Domain", inspection: "미포함", scope: "패치지원" },
+        ],
+    },
+    {
+        id: "mt-003",
+        contractName: "헬로비전 전자보증 연계 유지보수",
+        endUser: "헬로비전",
+        contractCompany: "헬로비전",
+        businessNumber: "345-67-89012",
+        startDate: "2026.01.01",
+        endDate: "2026.06.25",
+        renewalMonth: "2026년 06월",
+        status: "견적작성중",
+        owner: "정유진",
+        annualAmount: 12000000,
+        monthlyAmount: 1000000,
+        billingCycle: "분기",
+        billingMethod: "역발행",
+        billingDay: "익월 5일",
+        billingStatus: "역발행대기",
+        documents: "검수확인서",
+        contactName: "박담당",
+        contactEmail: "tax@hellovision.example",
+        inspectionIncluded: true,
+        inspectionCount: "연 1회",
+        memo: "고객사 역발행 요청 후 세금계산서 처리",
+        products: [
+            { productName: "SGIxLinker", category: "전자보증연계", quantity: 1, licenseType: "Copy", inspection: "포함 / 연 1회", scope: "장애지원·정기점검" },
+        ],
+    },
+    {
+        id: "mt-004",
+        contractName: "현대오토에버 통합 유지보수",
+        endUser: "현대자동차",
+        contractCompany: "현대오토에버",
+        businessNumber: "456-78-90123",
+        startDate: "2026.02.01",
+        endDate: "2026.07.31",
+        renewalMonth: "2026년 07월",
+        status: "미준비",
+        owner: "정유진",
+        annualAmount: 36000000,
+        monthlyAmount: 3000000,
+        billingCycle: "매월",
+        billingMethod: "정발행 후 서류 제출",
+        billingDay: "당월 25일",
+        billingStatus: "서류요청",
+        documents: "검수확인서, 완료보고서",
+        contactName: "최담당",
+        contactEmail: "contract@autoever.example",
+        inspectionIncluded: true,
+        inspectionCount: "연 1회",
+        memo: "계산서 발행 전 완료보고서 선제출 필요",
+        products: [
+            { productName: "SecuKit NX", category: "공동인증", quantity: 5, licenseType: "Copy", inspection: "포함 / 연 1회", scope: "패치·장애지원·정기점검" },
+            { productName: "SecuKit Cert", category: "공동인증", quantity: 2, licenseType: "WAS", inspection: "포함 / 연 1회", scope: "장애지원" },
+        ],
+    },
+    {
+        id: "mt-005",
+        contractName: "포시에스 공동인증 유지보수",
+        endUser: "포시에스",
+        contractCompany: "포시에스",
+        businessNumber: "567-89-01234",
+        startDate: "2026.02.01",
+        endDate: "2026.07.31",
+        renewalMonth: "2026년 07월",
+        status: "미준비",
+        owner: "정유진",
+        annualAmount: 9600000,
+        monthlyAmount: 800000,
+        billingCycle: "연 1회",
+        billingMethod: "정발행",
+        billingDay: "계약 시작월",
+        billingStatus: "처리완료",
+        documents: "없음",
+        contactName: "문담당",
+        contactEmail: "finance@forcs.example",
+        inspectionIncluded: false,
+        inspectionCount: "미포함",
+        memo: "연 1회 일괄 발행",
+        products: [
+            { productName: "SecuKit HTML5", category: "공동인증", quantity: 1, licenseType: "Domain", inspection: "미포함", scope: "패치지원" },
+        ],
+    },
+    {
+        id: "mt-006",
+        contractName: "엠로 전자계약 연계 유지보수",
+        endUser: "엠로",
+        contractCompany: "엠로",
+        businessNumber: "678-90-12345",
+        startDate: "2026.02.01",
+        endDate: "2026.07.31",
+        renewalMonth: "2026년 07월",
+        status: "고객검토중",
+        owner: "정유진",
+        annualAmount: 15000000,
+        monthlyAmount: 1250000,
+        billingCycle: "매월",
+        billingMethod: "정발행 후 XML 업로드",
+        billingDay: "익월 5일",
+        billingStatus: "XML업로드대기",
+        documents: "거래명세서",
+        contactName: "오담당",
+        contactEmail: "billing@emro.example",
+        inspectionIncluded: true,
+        inspectionCount: "연 1회",
+        memo: "구매시스템 업로드 기한 준수 필요",
+        products: [
+            { productName: "SGIxLinker", category: "전자보증연계", quantity: 2, licenseType: "Copy", inspection: "포함 / 연 1회", scope: "장애지원·정기점검" },
+        ],
+    },
+];
+
 function customerDisplayName(customer) {
     return customer.displayName || customer.name;
 }
@@ -918,6 +1090,7 @@ function CrmShell({ user, onLogout }) {
         <nav className="navList" aria-label="주요 메뉴">
           <NavButton icon={<LayoutDashboard size={18}/>} label="영업 현황" view="salesStatus" activeView={activeView} onClick={setActiveView}/>
           <NavButton icon={<BriefcaseBusiness size={18}/>} label="기존 고객 관리" view="existingCustomers" activeView={activeView} onClick={setActiveView}/>
+          <NavButton icon={<ClipboardList size={18}/>} label="유지보수 계약관리" view="maintenanceContracts" activeView={activeView} onClick={setActiveView}/>
           <NavButton icon={<FileText size={18}/>} label="문서 생성" view="documents" activeView={activeView} onClick={setActiveView}/>
           <NavButton icon={<BadgePercent size={18}/>} label="가격 가이드" view="pricing" activeView={activeView} onClick={setActiveView}/>
         </nav>
@@ -952,7 +1125,8 @@ function CrmShell({ user, onLogout }) {
             }} onAddDocumentDeal={addDocumentDeal} onDocumentTypeChange={setDocumentType} onToneChange={setTone} onInquiryChange={setInquiry} onGenerate={createDraft} onSaveDocument={saveDocument} onDownloadDocument={updateDocumentDownload} onSaveAsActivity={(activity) => setSalesActivities((current) => [activity, ...current])}/>)}
             {activeView === "salesStatus" && (<SalesOverviewView overview={salesOverview} activities={salesActivities} contacts={customerContacts} notes={customerNotes} salesTarget={crmData.salesTarget} settings={statusSettings} onSettingsChange={setStatusSettings} onAddDeal={addSalesDeal} onAddActivity={addActivity} onNavigate={setActiveView} onOpenDeal={(dealId) => setDrawerDealId(dealId)}/>)}
             {activeView === "existingCustomers" && (<ExistingCustomersView customers={existingCustomers} opportunities={customerOpportunities} activities={salesActivities} documents={savedDocuments} contacts={customerContacts} notes={customerNotes} onSaveContact={saveCustomerContact} onDeleteContact={deleteCustomerContact} onSetPrimaryContact={setPrimaryCustomerContact} onSaveNotes={saveCustomerNotes} onCreateOpportunity={addCustomerOpportunity} onNavigate={setActiveView}/>)}
-            {activeView === "recommendedActions" && (<RecommendedActionsView tasks={salesOverview.upcomingTasks} riskDeals={salesOverview.riskDeals} deals={salesOverview.dealsWithStatus} selectedCustomerName={customerDisplayName(customer)} selectedCustomerDealCount={salesOverview.dealsWithStatus.filter((item) => item.customerId === customer.id).length} selectedCustomerTaskCount={salesTasks.filter((task) => salesOverview.dealsWithStatus.some((selectedDeal) => selectedDeal.customerId === customer.id && selectedDeal.id === task.dealId)).length} onNavigate={setActiveView} onOpenDeal={(dealId) => setDrawerDealId(dealId)}/>)}
+            {activeView === "maintenanceContracts" && (<MaintenanceContractsView contracts={maintenanceContracts}/>)}
+            {activeView === "recommendedActions" && (<RecommendedActionsView tasks={salesOverview.upcomingTasks} riskDeals={salesOverview.riskDeals} deals={salesOverview.dealsWithStatus} selectedCustomerName={customerDisplayName(customer)} selectedCustomerDealCount={salesOverview.dealsWithStatus.filter((item) => item.customerId === customer.id).length} selectedCustomerTaskCount={salesTasks.filter((task) => salesOverview.dealsWithStatus.some((selectedDeal) => selectedDeal.customerId === customer.id && selectedDeal.id === task.dealId)).length} onNavigate={setActiveView} onOpenDeal={(dealId) => setDrawerDealId(dealId)}/>) }
             {activeView === "pricing" && (<PricingView customer={customer} deal={deal} customers={crmData.customers} input={pricingInput} guide={pricingGuide} settings={pricingSettings} onCustomerChange={handleCustomerChange} onChange={(nextInput) => setPricingInput((current) => ({ ...current, ...nextInput }))} onSettingsChange={savePricingSettings} onSaveGuide={savePricingGuideResult}/>)}
           </section>
         </div>
@@ -1197,6 +1371,222 @@ function ReadonlyField({ label, value }) {
       <input value={value} readOnly/>
     </label>);
 }
+
+function MaintenanceContractsView({ contracts }) {
+    const [selectedContractId, setSelectedContractId] = useState(contracts[0]?.id ?? "");
+    const [keyword, setKeyword] = useState("");
+    const [statusFilter, setStatusFilter] = useState("all");
+    const [productFilter, setProductFilter] = useState("all");
+    const selectedContract = contracts.find((item) => item.id === selectedContractId) ?? contracts[0];
+    const productOptions = Array.from(new Set(contracts.flatMap((contract) => contract.products.map((product) => product.productName))));
+    const filteredContracts = contracts.filter((contract) => {
+        const normalizedKeyword = keyword.trim().toLowerCase();
+        const keywordMatched = !normalizedKeyword || [contract.contractName, contract.endUser, contract.contractCompany, contract.billingMethod, contract.owner]
+            .some((value) => value.toLowerCase().includes(normalizedKeyword));
+        const statusMatched = statusFilter === "all" || contract.status === statusFilter;
+        const productMatched = productFilter === "all" || contract.products.some((product) => product.productName === productFilter);
+        return keywordMatched && statusMatched && productMatched;
+    });
+    const thisMonthContracts = contracts.filter((contract) => contract.endDate.startsWith("2026.06"));
+    const nextMonthContracts = contracts.filter((contract) => contract.endDate.startsWith("2026.07"));
+    const billingTargets = contracts.filter((contract) => ["발행예정", "역발행대기", "XML업로드대기", "서류요청"].includes(contract.billingStatus));
+    const xmlTargets = contracts.filter((contract) => contract.billingMethod.includes("XML"));
+    const inspectionTargets = contracts.filter((contract) => contract.inspectionIncluded);
+    const partnerSummary = Object.values(contracts.reduce((acc, contract) => {
+        const current = acc[contract.contractCompany] ?? { name: contract.contractCompany, count: 0, amount: 0, products: new Set() };
+        current.count += 1;
+        current.amount += contract.annualAmount;
+        contract.products.forEach((product) => current.products.add(product.productName));
+        acc[contract.contractCompany] = current;
+        return acc;
+    }, {})).map((item) => ({ ...item, products: Array.from(item.products).join(", ") }));
+    return (<div className="featureStack maintenancePage">
+      <div className="sectionTitle">
+        <div>
+          <p className="eyebrow">Maintenance Contract</p>
+          <h2>유지보수 계약관리</h2>
+        </div>
+        <span className="statusPill">계약 · 제품 · 청구 방식 통합 관리</span>
+      </div>
+
+      <div className="maintenanceHero">
+        <div>
+          <p className="eyebrow">Dashboard</p>
+          <h3>이번 달에 챙겨야 할 계약과 청구 업무</h3>
+          <p>계약 만료 예정 고객, 제품별 유지보수 수량, 정발행/역발행/XML 업로드 업무를 한 화면에서 확인합니다.</p>
+        </div>
+        <button className="primaryButton" type="button"><Plus size={16}/> 계약 등록</button>
+      </div>
+
+      <div className="maintenanceMetricGrid">
+        <MaintenanceMetricCard label="전체 계약" value={`${contracts.length}건`} description="등록된 유지보수 계약" icon={<ClipboardList size={19}/>}/>
+        <MaintenanceMetricCard label="당월 만료 예정" value={`${thisMonthContracts.length}건`} names={thisMonthContracts.map((item) => item.contractCompany)} icon={<AlertTriangle size={19}/>}/>
+        <MaintenanceMetricCard label="익월 만료 예정" value={`${nextMonthContracts.length}건`} names={nextMonthContracts.map((item) => item.contractCompany)} icon={<History size={19}/>}/>
+        <MaintenanceMetricCard label="이번 달 청구 처리" value={`${billingTargets.length}건`} names={[`정발행 ${contracts.filter((item) => item.billingMethod === "정발행").length}건`, `역발행 ${contracts.filter((item) => item.billingMethod.includes("역발행")).length}건`, `XML ${xmlTargets.length}건`]} icon={<FileText size={19}/>}/>
+      </div>
+
+      <div className="maintenanceLayout">
+        <section className="panel maintenanceListPanel">
+          <div className="panelHeader">
+            <div className="panelTitle"><ClipboardList size={18}/><h2>계약관리 목록</h2></div>
+            <span className="statusPill">{filteredContracts.length}건 조회</span>
+          </div>
+          <div className="maintenanceFilters">
+            <input value={keyword} onChange={(event) => setKeyword(event.target.value)} placeholder="계약명, 고객사, 계약사, 청구방식 검색"/>
+            <select value={statusFilter} onChange={(event) => setStatusFilter(event.target.value)}>
+              <option value="all">전체 상태</option>
+              <option value="갱신예정">갱신예정</option>
+              <option value="견적작성중">견적작성중</option>
+              <option value="고객검토중">고객검토중</option>
+              <option value="미준비">미준비</option>
+            </select>
+            <select value={productFilter} onChange={(event) => setProductFilter(event.target.value)}>
+              <option value="all">전체 제품</option>
+              {productOptions.map((product) => <option key={product} value={product}>{product}</option>)}
+            </select>
+          </div>
+          <div className="maintenanceTable">
+            <div className="maintenanceHead">
+              <span>계약명</span><span>End-User</span><span>계약사</span><span>만료일</span><span>계약금액</span><span>청구방식</span><span>상태</span>
+            </div>
+            {filteredContracts.map((contract) => (<button key={contract.id} className={`maintenanceRow ${selectedContract?.id === contract.id ? "selected" : ""}`} type="button" onClick={() => setSelectedContractId(contract.id)}>
+              <span className="strongCell">{contract.contractName}</span>
+              <span>{contract.endUser}</span>
+              <span>{contract.contractCompany}</span>
+              <span>{contract.endDate}</span>
+              <span>{formatCurrency(contract.annualAmount)}</span>
+              <span>{contract.billingMethod}</span>
+              <span><span className="maintenanceStatusTag">{contract.status}</span></span>
+            </button>))}
+          </div>
+        </section>
+
+        <aside className="panel maintenanceSidePanel">
+          <div className="panelTitle"><FileText size={18}/><h2>청구 처리 현황</h2></div>
+          <MaintenanceStatusLine label="정발행" value={`${contracts.filter((item) => item.billingMethod === "정발행").length}건`}/>
+          <MaintenanceStatusLine label="역발행" value={`${contracts.filter((item) => item.billingMethod.includes("역발행")).length}건`}/>
+          <MaintenanceStatusLine label="XML 업로드 필요" value={`${xmlTargets.length}건`}/>
+          <MaintenanceStatusLine label="서류 제출 필요" value={`${contracts.filter((item) => item.documents !== "없음").length}건`}/>
+          <MaintenanceStatusLine label="정기점검 포함" value={`${inspectionTargets.length}건`}/>
+          <div className="miniDivider"/>
+          <strong className="miniTitle">주요 파트너사</strong>
+          {partnerSummary.map((partner) => (<div className="partnerMini" key={partner.name}>
+            <b>{partner.name}</b>
+            <span>{partner.count}건 · {formatCurrency(partner.amount)}</span>
+          </div>))}
+        </aside>
+      </div>
+
+      {selectedContract && (<section className="panel contractDetailPanel">
+        <div className="panelHeader">
+          <div className="panelTitle"><Layers3 size={18}/><h2>계약 상세</h2></div>
+          <span className="statusPill">{selectedContract.contractName}</span>
+        </div>
+        <div className="maintenanceTabs">
+          <button className="active" type="button">기본정보</button>
+          <button type="button">청구정보</button>
+          <button type="button">담당자</button>
+          <button type="button">메모/파일</button>
+        </div>
+        <div className="detailSectionGrid">
+          <section className="maintenanceDetailBox wide">
+            <h3>1. 계약 기본정보</h3>
+            <div className="detailInfoGrid">
+              <ReadonlyInfo label="계약명" value={selectedContract.contractName}/>
+              <ReadonlyInfo label="End-User" value={selectedContract.endUser}/>
+              <ReadonlyInfo label="계약사" value={selectedContract.contractCompany}/>
+              <ReadonlyInfo label="사업자번호" value={selectedContract.businessNumber}/>
+              <ReadonlyInfo label="계약기간" value={`${selectedContract.startDate} ~ ${selectedContract.endDate}`}/>
+              <ReadonlyInfo label="계약상태" value={selectedContract.status}/>
+              <ReadonlyInfo label="계약예정월" value={selectedContract.renewalMonth}/>
+              <ReadonlyInfo label="내부 담당자" value={selectedContract.owner}/>
+            </div>
+            <div className="serviceConditionRow">
+              <span>정기점검 여부 <b>{selectedContract.inspectionIncluded ? "포함" : "미포함"}</b></span>
+              <span>정기점검 횟수 <b>{selectedContract.inspectionCount}</b></span>
+            </div>
+          </section>
+
+          <section className="maintenanceDetailBox wide">
+            <h3>2. 계약 제품 및 수량</h3>
+            <div className="productMiniTable">
+              <div className="productMiniHead"><span>제품명</span><span>제품구분</span><span>수량</span><span>라이선스 기준</span><span>정기점검</span><span>유지보수 범위</span></div>
+              {selectedContract.products.map((product) => (<div className="productMiniRow" key={`${selectedContract.id}-${product.productName}`}>
+                <span className="strongCell">{product.productName}</span><span>{product.category}</span><span>{product.quantity}</span><span>{product.licenseType}</span><span>{product.inspection}</span><span>{product.scope}</span>
+              </div>))}
+            </div>
+          </section>
+
+          <section className="maintenanceDetailBox wide">
+            <h3>3. 계약 금액</h3>
+            <div className="amountCardGrid">
+              <MaintenanceAmountCard label="연간 계약금액" value={formatCurrency(selectedContract.annualAmount)}/>
+              <MaintenanceAmountCard label="월 유지보수 매출" value={formatCurrency(selectedContract.monthlyAmount)}/>
+              <MaintenanceAmountCard label="청구 주기" value={selectedContract.billingCycle}/>
+              <MaintenanceAmountCard label="청구 방식" value={selectedContract.billingMethod}/>
+            </div>
+            <div className="monthRevenueBar">
+              {["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"].map((month) => <span key={month}><b>{month}</b>{formatNumber(selectedContract.monthlyAmount / 10000)}만</span>)}
+            </div>
+          </section>
+
+          <section className="maintenanceDetailBox">
+            <h3>청구정보</h3>
+            <ReadonlyInfo label="발행 방식" value={selectedContract.billingMethod}/>
+            <ReadonlyInfo label="발행 주기" value={selectedContract.billingCycle}/>
+            <ReadonlyInfo label="발행일" value={selectedContract.billingDay}/>
+            <ReadonlyInfo label="필요 서류" value={selectedContract.documents}/>
+            <ReadonlyInfo label="처리 상태" value={selectedContract.billingStatus}/>
+          </section>
+
+          <section className="maintenanceDetailBox">
+            <h3>담당자 / 메모</h3>
+            <ReadonlyInfo label="계산서 담당자" value={selectedContract.contactName}/>
+            <ReadonlyInfo label="담당자 이메일" value={selectedContract.contactEmail}/>
+            <ReadonlyInfo label="특이사항" value={selectedContract.memo}/>
+          </section>
+        </div>
+      </section>)}
+
+      <section className="panel productCustomerPanel">
+        <div className="panelHeader">
+          <div className="panelTitle"><Settings2 size={18}/><h2>제품별 고객관리</h2></div>
+          <span className="statusPill">공문 발송 대상 추출용</span>
+        </div>
+        <div className="productCustomerGrid">
+          {productOptions.map((productName) => {
+            const relatedContracts = contracts.filter((contract) => contract.products.some((product) => product.productName === productName));
+            return (<article className="productCustomerCard" key={productName}>
+              <strong>{productName}</strong>
+              <span>{relatedContracts.length}개 고객사</span>
+              <small>{relatedContracts.map((contract) => contract.endUser).join(" · ")}</small>
+            </article>);
+          })}
+        </div>
+      </section>
+    </div>);
+}
+function MaintenanceMetricCard({ label, value, icon, description, names = [] }) {
+    return (<article className="maintenanceMetricCard">
+      <span className="metricIcon">{icon}</span>
+      <div>
+        <small>{label}</small>
+        <strong>{value}</strong>
+        {description && <p>{description}</p>}
+        {names.length > 0 && <ul>{names.slice(0, 4).map((name) => <li key={name}>{name}</li>)}</ul>}
+      </div>
+    </article>);
+}
+function MaintenanceStatusLine({ label, value }) {
+    return (<div className="maintenanceStatusLine"><span>{label}</span><strong>{value}</strong></div>);
+}
+function ReadonlyInfo({ label, value }) {
+    return (<div className="readonlyInfo"><span>{label}</span><strong>{value}</strong></div>);
+}
+function MaintenanceAmountCard({ label, value }) {
+    return (<article className="amountCard"><span>{label}</span><strong>{value}</strong></article>);
+}
+
 function ExistingCustomersView({ customers, opportunities, activities, documents, contacts, notes, onSaveContact, onDeleteContact, onSetPrimaryContact, onSaveNotes, onCreateOpportunity, onNavigate, }) {
     const [searchTerm, setSearchTerm] = useState("");
     const [statusFilter, setStatusFilter] = useState("all");

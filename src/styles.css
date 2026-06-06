@@ -3197,3 +3197,453 @@ button.riskItem {
     grid-template-columns: 1fr;
   }
 }
+
+/* 유지보수 계약관리 */
+.maintenancePage {
+  --maintenance-blue: #2563eb;
+  --maintenance-blue-dark: #1d4ed8;
+  --maintenance-blue-soft: #eff6ff;
+  --maintenance-border: #dbe6f3;
+}
+
+.maintenanceHero {
+  border: 1px solid #cfe0f5;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f8fbff 0%, #eef6ff 100%);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  box-shadow: var(--shadow);
+}
+
+.maintenanceHero h3 {
+  margin: 4px 0 7px;
+  font-size: 22px;
+}
+
+.maintenanceHero p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.55;
+}
+
+.maintenanceMetricGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.maintenanceMetricCard {
+  border: 1px solid var(--maintenance-border);
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 12px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  min-height: 142px;
+}
+
+.maintenanceMetricCard .metricIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: var(--maintenance-blue-soft);
+  color: var(--maintenance-blue);
+}
+
+.maintenanceMetricCard small {
+  display: block;
+  color: #64748b;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.maintenanceMetricCard strong {
+  display: block;
+  color: #0f172a;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.maintenanceMetricCard p {
+  color: #64748b;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+
+.maintenanceMetricCard ul {
+  margin: 8px 0 0;
+  padding-left: 16px;
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.maintenanceLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+  gap: 14px;
+}
+
+.maintenanceFilters {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) 160px 170px;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.maintenanceTable {
+  margin-top: 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: auto;
+  background: #ffffff;
+}
+
+.maintenanceHead,
+.maintenanceRow {
+  display: grid;
+  grid-template-columns: 1.6fr 0.9fr 0.9fr 0.8fr 0.9fr 1.1fr 0.75fr;
+  gap: 10px;
+  align-items: center;
+  min-width: 1040px;
+  padding: 11px 13px;
+}
+
+.maintenanceHead {
+  background: #f1f5f9;
+  color: #1e3a8a;
+  font-size: 12px;
+  font-weight: 900;
+  border-bottom: 1px solid var(--line);
+}
+
+.maintenanceRow {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #eef2f7;
+  background: #ffffff;
+  color: #475569;
+  text-align: left;
+  font-size: 13px;
+}
+
+.maintenanceRow:last-child {
+  border-bottom: 0;
+}
+
+.maintenanceRow:hover,
+.maintenanceRow.selected {
+  background: #f0f6ff;
+}
+
+.maintenanceRow.selected {
+  box-shadow: inset 4px 0 0 var(--maintenance-blue);
+}
+
+.strongCell {
+  color: #0f172a !important;
+  font-weight: 900;
+}
+
+.maintenanceStatusTag {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 999px;
+  background: var(--maintenance-blue-soft);
+  color: var(--maintenance-blue-dark);
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.maintenanceSidePanel {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.maintenanceStatusLine {
+  border: 1px solid #e6edf7;
+  border-radius: 10px;
+  background: #f8fbff;
+  padding: 11px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.maintenanceStatusLine span {
+  color: #475569;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.maintenanceStatusLine strong {
+  color: #0f172a;
+}
+
+.miniDivider {
+  height: 1px;
+  background: var(--line);
+  margin: 4px 0;
+}
+
+.miniTitle {
+  color: #0f172a;
+  font-size: 14px;
+}
+
+.partnerMini {
+  display: grid;
+  gap: 3px;
+  border: 1px solid #e6edf7;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #ffffff;
+}
+
+.partnerMini b {
+  color: #0f172a;
+}
+
+.partnerMini span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.contractDetailPanel,
+.productCustomerPanel {
+  display: grid;
+  gap: 14px;
+}
+
+.maintenanceTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.maintenanceTabs button {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #ffffff;
+  color: #475569;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.maintenanceTabs button.active {
+  border-color: var(--maintenance-blue);
+  background: var(--maintenance-blue);
+  color: #ffffff;
+}
+
+.detailSectionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.maintenanceDetailBox {
+  border: 1px solid #dbe6f3;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.maintenanceDetailBox.wide {
+  grid-column: 1 / -1;
+}
+
+.maintenanceDetailBox h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.detailInfoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  padding: 13px;
+  border-radius: 10px;
+  background: #f8fbff;
+  border: 1px solid #d8e6f8;
+}
+
+.readonlyInfo {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.readonlyInfo span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.readonlyInfo strong {
+  color: #0f172a;
+  font-size: 13px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.serviceConditionRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.serviceConditionRow span {
+  border-radius: 999px;
+  border: 1px solid #bfdbfe;
+  background: var(--maintenance-blue-soft);
+  color: #1e40af;
+  padding: 7px 11px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.serviceConditionRow b {
+  margin-left: 8px;
+  color: var(--maintenance-blue);
+}
+
+.productMiniTable {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.productMiniHead,
+.productMiniRow {
+  display: grid;
+  grid-template-columns: 1.1fr 0.8fr 0.45fr 0.8fr 0.95fr 1fr;
+  gap: 10px;
+  align-items: center;
+  min-width: 880px;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+
+.productMiniHead {
+  background: #f1f5f9;
+  color: #1e3a8a;
+  font-weight: 900;
+}
+
+.productMiniRow {
+  border-top: 1px solid #edf2f7;
+  color: #475569;
+}
+
+.amountCardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.amountCard {
+  border: 1px solid #d8e6f8;
+  border-radius: 12px;
+  background: #f8fbff;
+  padding: 13px;
+  display: grid;
+  gap: 6px;
+}
+
+.amountCard span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.amountCard strong {
+  color: #0f172a;
+  font-size: 15px;
+}
+
+.monthRevenueBar {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(60px, 1fr));
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: auto;
+  background: #f8fafc;
+}
+
+.monthRevenueBar span {
+  min-width: 70px;
+  padding: 9px 8px;
+  display: grid;
+  gap: 4px;
+  text-align: center;
+  color: #0f172a;
+  font-size: 12px;
+  border-right: 1px solid var(--line);
+}
+
+.monthRevenueBar span:last-child {
+  border-right: 0;
+}
+
+.monthRevenueBar b {
+  color: #64748b;
+}
+
+.productCustomerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 10px;
+}
+
+.productCustomerCard {
+  border: 1px solid #dbe6f3;
+  border-radius: 12px;
+  background: #f8fbff;
+  padding: 13px;
+  display: grid;
+  gap: 6px;
+}
+
+.productCustomerCard strong {
+  color: #0f172a;
+}
+
+.productCustomerCard span {
+  color: var(--maintenance-blue);
+  font-weight: 900;
+}
+
+.productCustomerCard small {
+  color: #64748b;
+  line-height: 1.45;
+}
+
+@media (max-width: 1180px) {
+  .maintenanceMetricGrid,
+  .maintenanceLayout,
+  .detailSectionGrid,
+  .amountCardGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .maintenanceFilters,
+  .detailInfoGrid {
+    grid-template-columns: 1fr;
+  }
+}
