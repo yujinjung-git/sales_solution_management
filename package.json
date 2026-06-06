@@ -1,7 +1,10 @@
 {
+  "name": "sales_solution_management",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "deploy:firebase": "npm run build && firebase deploy --only hosting --project sales-crm-9cdc9"
   },
@@ -14,12 +17,7 @@
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "@types/react": "^19.2.15",
-    "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "latest",
-    "firebase-tools": "^15.19.0",
-    "playwright-core": "^1.60.0",
-    "typescript": "latest",
     "vite": "latest"
   }
 }
