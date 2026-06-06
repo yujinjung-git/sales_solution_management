@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.playwright-temp/
+.firebase/
+
+.env
+.env.local
+.env.*.local
+
+*.tsbuildinfo
+*.log
+verification-screenshot.png
+vite.config.js
+vite.config.d.ts
