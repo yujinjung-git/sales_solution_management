@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
-    "preview": "vite preview --host 127.0.0.1",
-    "deploy:firebase": "npm run build && firebase deploy --only hosting --project sales-crm-9cdc9"
+    "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {
     "docx": "^9.7.1",
