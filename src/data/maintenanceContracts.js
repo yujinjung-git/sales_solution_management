@@ -1,10 +1,7 @@
-// Auto-generated from 유지보수.xlsx.
-// 제품/수량/담당자 정보는 원본 엑셀에 없어 계약명·계약사 기준으로 추정 보강했습니다.
 export const maintenanceGeneratedAt = "2026-06-07";
 export const maintenanceContracts = [
   {
     "id": "mc-004",
-    "sourceRow": 4,
     "contractName": "[표준계약][CJ올리브네트웍스] 2026년 경영혁신팀 유지보수(보증보험연동) 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -35,7 +32,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -71,11 +68,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-005",
-    "sourceRow": 5,
     "contractName": "[표준계약][CJ올리브네트웍스] CJ ENM(커머스) 2026년 SW통합 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -106,7 +103,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -142,11 +139,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-006",
-    "sourceRow": 6,
     "contractName": "[표준계약][신세계아이앤씨] 2026년 이마트, 신세계건설 통합 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -177,7 +174,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -213,11 +210,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-007",
-    "sourceRow": 7,
     "contractName": "[표준계약][신세계아이앤씨] 2026년 청약시스템 Secukit NX 라이센스 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "일괄",
@@ -248,7 +245,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -284,11 +281,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-008",
-    "sourceRow": 8,
     "contractName": "[표준계약][LG CNS] 2026년 KLNet 보안툴킷 및 인증서 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -319,7 +316,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 XML 업로드",
     "billingCycle": "매월",
     "billingDueRule": "당월 25일",
-    "billingStatus": "XML업로드대기",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": true,
     "requiredDocuments": [
       "거래명세서"
@@ -357,11 +354,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-009",
-    "sourceRow": 9,
     "contractName": "[표준계약][LG CNS] 2026년 LG전자 SW BEST 시스템 통합 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -392,7 +389,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 XML 업로드",
     "billingCycle": "매월",
     "billingDueRule": "당월 25일",
-    "billingStatus": "XML업로드대기",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": true,
     "requiredDocuments": [
       "거래명세서"
@@ -430,11 +427,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-010",
-    "sourceRow": 10,
     "contractName": "[표준계약][LG CNS] 2026년 SINGLEX 플랫폼 공동인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "27년02월",
     "invoiceCycleRaw": "매월",
@@ -465,7 +462,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 XML 업로드",
     "billingCycle": "매월",
     "billingDueRule": "당월 25일",
-    "billingStatus": "XML업로드대기",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": true,
     "requiredDocuments": [
       "거래명세서"
@@ -503,11 +500,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-011",
-    "sourceRow": 11,
     "contractName": "[표준계약][LG CNS] '25-28년 오티스-OSE 전자계약 관련 유지보수 변경 계약 체결의 건",
     "expectedMonth": "28년03월",
     "invoiceCycleRaw": "매월",
@@ -538,7 +535,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 XML 업로드",
     "billingCycle": "매월",
     "billingDueRule": "당월 25일",
-    "billingStatus": "XML업로드대기",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": true,
     "requiredDocuments": [
       "거래명세서"
@@ -576,11 +573,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-012",
-    "sourceRow": 12,
     "contractName": "[LG CNS] 24-26년 엔지니어링공제조합 전자보증연계 유지보수 계약_자동 연장건",
     "expectedMonth": "26년02월",
     "invoiceCycleRaw": "매월",
@@ -611,7 +608,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 XML 업로드",
     "billingCycle": "매월",
     "billingDueRule": "당월 25일",
-    "billingStatus": "XML업로드대기",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": true,
     "requiredDocuments": [
       "거래명세서"
@@ -649,11 +646,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-013",
-    "sourceRow": 13,
     "contractName": "[표준계약][LG CNS] 2026년 KLNET 공동인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "일괄",
@@ -684,7 +681,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 XML 업로드",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "XML업로드대기",
+    "billingStatus": "6월 처리대상",
     "xmlUploadRequired": true,
     "requiredDocuments": [
       "거래명세서"
@@ -722,11 +719,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "6월 청구 확인 필요"
   },
   {
     "id": "mc-014",
-    "sourceRow": 14,
     "contractName": "[표준계약][삼성에스디에스] 26년 코닝정밀소재 CPM 상용SW 유지보수 계약의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -757,7 +754,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -793,11 +790,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-015",
-    "sourceRow": 15,
     "contractName": "[표준계약][삼성전자] 2026년 하도급 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -828,7 +825,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -864,11 +861,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-016",
-    "sourceRow": 16,
     "contractName": "[표준계약][삼성물산] 2026년 공동인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "일괄",
@@ -899,7 +896,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -935,11 +932,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-017",
-    "sourceRow": 17,
     "contractName": "[표준계약][포스코DX] 포스코(충주) 세금계산서 틀킷 SG SecXML TAX SW 정비('26년) 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -970,7 +967,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 XML 업로드",
     "billingCycle": "매월",
     "billingDueRule": "당월 25일",
-    "billingStatus": "XML업로드대기",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": true,
     "requiredDocuments": [
       "거래명세서"
@@ -1008,11 +1005,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-018",
-    "sourceRow": 18,
     "contractName": "[표준계약][포스코DX] 포스코이앤씨(송도) 서울보증보험 연계모듈(SGIxLinker) 정비('26년) 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -1043,7 +1040,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -1079,11 +1076,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-019",
-    "sourceRow": 19,
     "contractName": "[표준계약][현대오토에버] 2025년 구매, FTA, 보세통관영역 SW 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(03,06,09,12)",
@@ -1114,7 +1111,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -1152,11 +1149,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-020",
-    "sourceRow": 20,
     "contractName": "[표준계약][현대오토에버] 2026년 통합구매시스템 보안 SW 유지보수 : SECUREXML, SECUREKIT 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(03,06,09,12)",
@@ -1187,7 +1184,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 XML 업로드",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "XML업로드대기",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": true,
     "requiredDocuments": [
       "검수확인서",
@@ -1234,11 +1231,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-021",
-    "sourceRow": 21,
     "contractName": "[표준계약][현대오토에버] 2026년 현대모비스 통합 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(01월)",
@@ -1269,7 +1266,7 @@ export const maintenanceContracts = [
     "billingMethod": "역발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "역발행대기",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "고객사 포털 확인"
@@ -1307,11 +1304,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-022",
-    "sourceRow": 22,
     "contractName": "[현대오토에버] 현대자동차, 기아 '25년 본사 SW 통합유지보수 발주 계약",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(03,06,09,12)",
@@ -1342,7 +1339,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -1380,11 +1377,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-023",
-    "sourceRow": 23,
     "contractName": "[표준계약][현대오토에버] 2026년 현대로템 통합유지보수 발주계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(03월)",
@@ -1415,7 +1412,7 @@ export const maintenanceContracts = [
     "billingMethod": "역발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "역발행대기",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "고객사 포털 확인"
@@ -1453,11 +1450,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-024",
-    "sourceRow": 24,
     "contractName": "[표준계약][교보디티에스] '26년 건설공제조합 정보시스템 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -1488,7 +1485,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -1524,11 +1521,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-025",
-    "sourceRow": 25,
     "contractName": "[표준계약][모두아이티] 26년~27년 전문건설공제조합 KICA SecuXML 외 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -1559,7 +1556,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 XML 업로드",
     "billingCycle": "매월",
     "billingDueRule": "당월 25일",
-    "billingStatus": "XML업로드대기",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": true,
     "requiredDocuments": [
       "거래명세서"
@@ -1597,11 +1594,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-026",
-    "sourceRow": 26,
     "contractName": "[표준계약][DB inc] 26년 DB하이텍 통합구매지원시스템 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -1632,7 +1629,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -1668,11 +1665,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-027",
-    "sourceRow": 27,
     "contractName": "[표준계약][DB inc] '26년 DB글로벌칩 공동인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -1703,7 +1700,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -1739,11 +1736,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-028",
-    "sourceRow": 28,
     "contractName": "[표준계약][한화시스템] 2026년 ICT부문 서울보증보험 연계 모듈(SG IxLinker) 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -1774,7 +1771,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -1810,11 +1807,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-029",
-    "sourceRow": 29,
     "contractName": "[한화생명] SSL 및 서버 인증서, 공인인증 암호화 솔루션 유지보수(2026년) 계약 체결의 건",
     "expectedMonth": "28년12월",
     "invoiceCycleRaw": "2분기",
@@ -1845,7 +1842,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "청구 일정 확인",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -1883,11 +1880,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "청구 일정 확인 필요"
   },
   {
     "id": "mc-030",
-    "sourceRow": 30,
     "contractName": "[표준계약][다우기술] 키움예스저축은행 2026년 이기종 IT통합 유지보수 (SmartPKI) 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -1918,7 +1915,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -1954,11 +1951,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-031",
-    "sourceRow": 31,
     "contractName": "[표준계약][다우기술] 키움캐피탈 통합 유지보수(2026) 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -1989,7 +1986,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -2025,11 +2022,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-032",
-    "sourceRow": 32,
     "contractName": "[표준계약][다우기술] 2026년 구매관리시스템 PKI Tool Kit MA 유지보수 계약 체결의 건",
     "expectedMonth": "27년02월",
     "invoiceCycleRaw": "매월",
@@ -2060,7 +2057,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -2096,11 +2093,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-033",
-    "sourceRow": 33,
     "contractName": "[표준계약][동국시스템즈] 24년 DB손해보험 IT통합유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -2131,7 +2128,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -2167,11 +2164,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-034",
-    "sourceRow": 34,
     "contractName": "[표준계약][아시아나IDT] 2026년 구매시스템 서울보증보험 연계모듈(SGlxLinker) 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(01월)",
@@ -2202,7 +2199,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -2238,11 +2235,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-035",
-    "sourceRow": 35,
     "contractName": "[표준계약][포시에스] 24년 이폼사인시스템 SecuKit NX+HTML5(PC), HTML5(Mo) 소프트웨어 유지보수 계약 체결의 건",
     "expectedMonth": "26년08월",
     "invoiceCycleRaw": "년(09월)",
@@ -2273,7 +2270,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "사전 확인",
@@ -2317,11 +2314,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-036",
-    "sourceRow": 36,
     "contractName": "[표준계약][포시에스] 2026년 SK에너지 공동인증 솔루션 유지보수 발주 계약 체결의 건",
     "expectedMonth": "26년01월",
     "invoiceCycleRaw": "매월",
@@ -2352,7 +2349,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -2388,11 +2385,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-037",
-    "sourceRow": 37,
     "contractName": "[표준계약][포시에스] '25-26년 삼성웰스토리 공동인증 솔루션 유지보수 발주 계약 체결의 건",
     "expectedMonth": "26년02월",
     "invoiceCycleRaw": "매월",
@@ -2423,7 +2420,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -2459,11 +2456,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-038",
-    "sourceRow": 38,
     "contractName": "[표준계약][브이엔티지] 2026년 세아베스틸 SecuKit NX 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(01월)",
@@ -2494,7 +2491,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -2530,11 +2527,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-039",
-    "sourceRow": 39,
     "contractName": "[표준계약][브이엔티지] 26년 세아특수강 SecuKit NX 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(01월)",
@@ -2565,7 +2562,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -2601,11 +2598,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-040",
-    "sourceRow": 40,
     "contractName": "[표준계약][브이엔티지] '25년 세아창원특수강 구매시스템 공인인증 모듈 SecuKit NX 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(10월)",
@@ -2636,7 +2633,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -2672,11 +2669,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-041",
-    "sourceRow": 41,
     "contractName": "[표준계약][엠로] SK네트웍스 2026년 Buyone시스템 솔루션 유지보수 변경계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(02,04,07,10)",
@@ -2707,7 +2704,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -2745,11 +2742,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-042",
-    "sourceRow": 42,
     "contractName": "[표준계약][엠로] SK그룹 '26년 구매 관리 통합 시스템 유지보수 변경계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(02,04,07,10)",
@@ -2780,7 +2777,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -2818,11 +2815,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-043",
-    "sourceRow": 43,
     "contractName": "[표준계약][엠로] 삼성카드 '26년 IT구매관리 시스템 라이선스 유지보수 변경계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(02,04,07,10)",
@@ -2853,7 +2850,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -2891,11 +2888,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-044",
-    "sourceRow": 44,
     "contractName": "[표준계약][엠로] '26년 현대오일뱅크 통합구매시스템 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(02,04,07,10)",
@@ -2926,7 +2923,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -2964,11 +2961,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-045",
-    "sourceRow": 45,
     "contractName": "[표준계약][엠로] 라이나원 '26년 구매시스템 라이선스 유지보수 변경계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(02,04,07,10)",
@@ -2999,7 +2996,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -3037,11 +3034,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-046",
-    "sourceRow": 46,
     "contractName": "[표준계약][엠로] KT클라우드 '25년 통합 유지보수 라이선스 계약 체결의 건",
     "expectedMonth": "25년12월",
     "invoiceCycleRaw": "분기(03,06,09,12)",
@@ -3072,7 +3069,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -3110,11 +3107,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-047",
-    "sourceRow": 47,
     "contractName": "[표준계약][엠로] 큐로직 '26-27년 라이선스 유지보수 변경계약 체결의 건",
     "expectedMonth": "27년01월",
     "invoiceCycleRaw": "분기(02,04,07,10)",
@@ -3145,7 +3142,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -3183,11 +3180,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-048",
-    "sourceRow": 48,
     "contractName": "[표준계약][엠로] 블루월넛 '26년 법인확산 PKI툴킷 솔루션 유지보수 변경계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(2월)",
@@ -3218,7 +3215,7 @@ export const maintenanceContracts = [
     "billingMethod": "역발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "역발행대기",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "고객사 포털 확인"
@@ -3256,11 +3253,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-050",
-    "sourceRow": 50,
     "contractName": "[표준계약][엠로] 에코프로 '26년 가족사 통합구매시스템 라이선스 유지보수 변경계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "월",
@@ -3291,7 +3288,7 @@ export const maintenanceContracts = [
     "billingMethod": "역발행",
     "billingCycle": "매월",
     "billingDueRule": "고객사 요청 후",
-    "billingStatus": "역발행대기",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "고객사 포털 확인"
@@ -3329,11 +3326,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-051",
-    "sourceRow": 51,
     "contractName": "[표준계약][엠로] 한화솔루션/인사이트 '26년 라이선스 유지보수 변경계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(02,04,07,10)",
@@ -3364,7 +3361,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -3402,11 +3399,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-052",
-    "sourceRow": 52,
     "contractName": "[표준계약][엠로] 현대엘리베이터 '26년 영업용 전자계약 시스템 사용 유지보수 변경 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(02,04,07,10)",
@@ -3437,7 +3434,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -3475,11 +3472,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-053",
-    "sourceRow": 53,
     "contractName": "[표준계약][엠로] 시큐아이 '26년도 구매시스템 라이선스 유지보수 변경계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(02,04,07,10)",
@@ -3510,7 +3507,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -3548,11 +3545,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-054",
-    "sourceRow": 54,
     "contractName": "[엠로] 만도 구매시스템 재구축 기술지원 턴키 계약",
     "expectedMonth": "26년06월",
     "invoiceCycleRaw": "년(10월)",
@@ -3583,7 +3580,7 @@ export const maintenanceContracts = [
     "billingMethod": "역발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "역발행대기",
+    "billingStatus": "청구 일정 확인",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "고객사 포털 확인"
@@ -3621,11 +3618,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "청구 일정 확인 필요"
   },
   {
     "id": "mc-056",
-    "sourceRow": 56,
     "contractName": "[표준계약][엠로] 해성디에스 '25-26년 구매시스템 유지보수 계약 체결의 건",
     "expectedMonth": "26년07월",
     "invoiceCycleRaw": "분기(09,11,02,05)",
@@ -3656,7 +3653,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -3694,11 +3691,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-057",
-    "sourceRow": 57,
     "contractName": "[표준계약][엠로] 현대제철 '25-26년 통합 라이선스 유지보수 계약 체결의 건",
     "expectedMonth": "26년06월",
     "invoiceCycleRaw": "분기(06)",
@@ -3729,7 +3726,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -3767,11 +3764,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-058",
-    "sourceRow": 58,
     "contractName": "[표준계약][우리은행] 공급망금융 플랫폼 서버인증서 및 SGlxLinker 물품임차계약 체결의 건",
     "expectedMonth": "26년09월",
     "invoiceCycleRaw": "년(10월)",
@@ -3802,7 +3799,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "사전 확인",
@@ -3838,11 +3835,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-059",
-    "sourceRow": 59,
     "contractName": "[표준계약][우리은행] 공급망 금융 플랫폼 솔루션(PKI TOOLKIT) 유지보수 계약의 건",
     "expectedMonth": "26년09월",
     "invoiceCycleRaw": "분기(01,04,07,10)",
@@ -3873,7 +3870,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -3911,11 +3908,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-060",
-    "sourceRow": 60,
     "contractName": "[표준계약][LS일렉트릭] 2026년 IT통합 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(02월)",
@@ -3946,7 +3943,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -3982,11 +3979,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-061",
-    "sourceRow": 61,
     "contractName": "[표준계약][대한송유관공사] '25년 전자보증 SG lxLinker 용역 계약 체결의 건",
     "expectedMonth": "26년08월",
     "invoiceCycleRaw": "분기(11,02,05,08)",
@@ -4017,7 +4014,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -4055,11 +4052,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-062",
-    "sourceRow": 62,
     "contractName": "[표준계약][LG CNS] 2026년 BGF리테일 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -4090,7 +4087,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 XML 업로드",
     "billingCycle": "매월",
     "billingDueRule": "당월 25일",
-    "billingStatus": "XML업로드대기",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": true,
     "requiredDocuments": [
       "거래명세서"
@@ -4128,11 +4125,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-063",
-    "sourceRow": 63,
     "contractName": "[CJ나눔재단] 25년 CJ도너스캠프 SecuKit NX 솔루션 유지보수 계약",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(01월)",
@@ -4163,7 +4160,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -4199,11 +4196,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-064",
-    "sourceRow": 64,
     "contractName": "[표준계약][SK네트웍스] 26년 SKN 서울보증보험 연계모듈 설치 및 기본 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(01월)",
@@ -4234,7 +4231,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -4270,11 +4267,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-065",
-    "sourceRow": 65,
     "contractName": "[표준계약][SK이노베이션] 2025년 BiOK시스템 SecuKit 공동인증모듈 유지보수 계약 체결의 건",
     "expectedMonth": "26년07월",
     "invoiceCycleRaw": "년(08월)",
@@ -4305,7 +4302,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "청구 일정 확인",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "견적 준비",
@@ -4341,11 +4338,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "청구 일정 확인 필요"
   },
   {
     "id": "mc-066",
-    "sourceRow": 66,
     "contractName": "[표준계약][SK주식회사] SKT 2026년 AM SW 통합 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(03,06,09,12)",
@@ -4376,7 +4373,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -4414,11 +4411,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-067",
-    "sourceRow": 67,
     "contractName": "[표준계약][SK텔레콤] '25년 SKT Open4U 공동인증서 SecuKit NX 유지보수 계약 체결의 건",
     "expectedMonth": "26년05월",
     "invoiceCycleRaw": "년(06월)",
@@ -4449,7 +4446,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -4485,11 +4482,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "6월 청구 확인 필요"
   },
   {
     "id": "mc-068",
-    "sourceRow": 68,
     "contractName": "[표준계약][농협정보시스템] 26년 농협몰 업무용 S/W 유지보수 계약 부속합의서 체결의 건",
     "expectedMonth": "26년06월",
     "invoiceCycleRaw": "매월",
@@ -4520,7 +4517,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "계약진행 필요",
@@ -4556,11 +4553,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-069",
-    "sourceRow": 69,
     "contractName": "[표준계약][대성홀딩스] 2026년 서울보증보험 연계모듈 유지보수 발주 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -4591,7 +4588,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -4627,11 +4624,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-070",
-    "sourceRow": 70,
     "contractName": "[표준계약][두산건설] '25년 공동인증 솔루션 SecuKit NX 유지보수 계약 체결의 건",
     "expectedMonth": "26년09월",
     "invoiceCycleRaw": "년(09월)",
@@ -4662,7 +4659,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "사전 확인",
@@ -4698,11 +4695,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-071",
-    "sourceRow": 71,
     "contractName": "[표준계약][롯데손해보험] 2024년 SG SecuXML 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -4733,7 +4730,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 XML 업로드",
     "billingCycle": "매월",
     "billingDueRule": "당월 25일",
-    "billingStatus": "XML업로드대기",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": true,
     "requiredDocuments": [
       "거래명세서"
@@ -4771,11 +4768,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-072",
-    "sourceRow": 72,
     "contractName": "[표준계약][롯데이노베이트] 2026년 LIT LCN 통합유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -4806,7 +4803,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -4842,11 +4839,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-073",
-    "sourceRow": 73,
     "contractName": "[표준계약][세포아소프트] 2025년 PKI 툴킷 통합 유지보수 발주 계약 체결의 건",
     "expectedMonth": "변동",
     "invoiceCycleRaw": "년(변동)",
@@ -4877,7 +4874,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "청구 일정 확인",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -4913,11 +4910,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "청구 일정 확인 필요"
   },
   {
     "id": "mc-074",
-    "sourceRow": 74,
     "contractName": "[표준계약][금호건설] 26년 전자계약시스템 PKI툴킷 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(01월)",
@@ -4948,7 +4945,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -4984,11 +4981,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-075",
-    "sourceRow": 75,
     "contractName": "[표준계약][NHN] 2025년 공인인증모듈 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년03월",
     "invoiceCycleRaw": "년(03월)",
@@ -5019,7 +5016,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -5055,11 +5052,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-076",
-    "sourceRow": 76,
     "contractName": "[표준계약][이노가드] 2025년 인증 툴킷 통합 유지보수 소급 계약 체결의 건",
     "expectedMonth": "변동",
     "invoiceCycleRaw": "년(변동)",
@@ -5090,7 +5087,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "청구 일정 확인",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -5126,11 +5123,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "청구 일정 확인 필요"
   },
   {
     "id": "mc-077",
-    "sourceRow": 77,
     "contractName": "[이씨뱅크] ''2019년 통합 유지보수'' 계약의 건",
     "expectedMonth": "자동연장",
     "invoiceCycleRaw": "년(09월)",
@@ -5161,7 +5158,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "견적 준비",
@@ -5197,11 +5194,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-078",
-    "sourceRow": 78,
     "contractName": "[표준계약][이크레더블네트웍스] '25년 한국철강 SecuKit NX 유지보수 및 인증서 계약 체결의 건",
     "expectedMonth": "26년08월",
     "invoiceCycleRaw": "년(09월)",
@@ -5232,7 +5229,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "청구 일정 확인",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "사전 확인",
@@ -5268,11 +5265,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "청구 일정 확인 필요"
   },
   {
     "id": "mc-079",
-    "sourceRow": 79,
     "contractName": "[표준계약][지마켓] 2025년 전자세금계산서 국세청전송모듈 S/W 유지보수 계약 체결의 건",
     "expectedMonth": "26년02월",
     "invoiceCycleRaw": "년(03월)",
@@ -5303,7 +5300,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -5339,11 +5336,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-080",
-    "sourceRow": 80,
     "contractName": "[GSITM] 2025년 GS리테일 전자계약시스템 보안툴킷 S/W통합 유지보수 계약",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(02월)",
@@ -5374,7 +5371,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -5410,11 +5407,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-081",
-    "sourceRow": 81,
     "contractName": "[표준계약][카페24] 2026년 SecuTax NXS 유지보수 계약 체결의 건",
     "expectedMonth": "27년01월",
     "invoiceCycleRaw": "년(01월)",
@@ -5445,7 +5442,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -5481,11 +5478,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-083",
-    "sourceRow": 83,
     "contractName": "[태영건설] 2025년 서울보증보험 연계모듈 유지보수 발주 계약",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(01월)",
@@ -5516,7 +5513,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -5552,11 +5549,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-084",
-    "sourceRow": 84,
     "contractName": "[표준계약][테오스] 2026년 쌍용건설 전산시스템재구축사업 SecuKit NX 솔루션 유지보수 발주 계약 체결의 건",
     "expectedMonth": "27년01월",
     "invoiceCycleRaw": "매월",
@@ -5587,7 +5584,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -5623,11 +5620,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-085",
-    "sourceRow": 85,
     "contractName": "[포스코스틸리온] 2025년 E-Biz 전자인증 유지보수 계약",
     "expectedMonth": "26년03월",
     "invoiceCycleRaw": "년(03월)",
@@ -5658,7 +5655,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -5694,11 +5691,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-086",
-    "sourceRow": 86,
     "contractName": "[표준계약][코이웨어] '25-26년 한국지급결제VAN협회 공동인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년07월",
     "invoiceCycleRaw": "년(09월)",
@@ -5729,7 +5726,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "청구 일정 확인",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "견적 준비",
@@ -5765,11 +5762,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "청구 일정 확인 필요"
   },
   {
     "id": "mc-087",
-    "sourceRow": 87,
     "contractName": "[표준계약][한섬] 2025년 전자계약시스템 공동인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년03월",
     "invoiceCycleRaw": "년(04월)",
@@ -5800,7 +5797,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -5836,11 +5833,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-088",
-    "sourceRow": 88,
     "contractName": "[표준계약][한패스] 26년 모바일 App용 공동인증모듈 SmartPKI, Key relay 소프트웨어 유지보수 계약의 건",
     "expectedMonth": "26년10월",
     "invoiceCycleRaw": "매년(10월)",
@@ -5871,7 +5868,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -5907,11 +5904,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-089",
-    "sourceRow": 89,
     "contractName": "[표준계약][BS한양] 2025년 보안인증 툴킷 유지관리 용역 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(02월)",
@@ -5942,7 +5939,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -5978,11 +5975,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-090",
-    "sourceRow": 90,
     "contractName": "[표준계약][현대아이티앤이] 2024년도 현대백화점 통합 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -6013,7 +6010,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -6049,11 +6046,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-091",
-    "sourceRow": 91,
     "contractName": "[표준계약][현대오일뱅크] 2026년 SGlxLinker 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(01월)",
@@ -6084,7 +6081,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -6120,11 +6117,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-092",
-    "sourceRow": 92,
     "contractName": "[표준계약][효성티앤에스] 2026년 소프트웨어 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -6155,7 +6152,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -6191,11 +6188,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-093",
-    "sourceRow": 93,
     "contractName": "[표준계약][이니텍] 2025년 OSB저축은행 Internet & Mobile Banking 보안솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "27년02월",
     "invoiceCycleRaw": "년(04월)",
@@ -6226,7 +6223,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -6262,11 +6259,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-094",
-    "sourceRow": 94,
     "contractName": "[표준계약][신한저축은행] 2022년 AX SG SecuKit 및 출입국조회서비스 유지보수 계약의 건",
     "expectedMonth": "26년03월",
     "invoiceCycleRaw": "년(04월)",
@@ -6297,7 +6294,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -6333,11 +6330,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-095",
-    "sourceRow": 95,
     "contractName": "[표준계약][KB데이타시스템] KB저축은행 2026년 전산설비 및 SW 통합유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -6368,7 +6365,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -6404,11 +6401,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-096",
-    "sourceRow": 96,
     "contractName": "[표준계약][디지털서울문화예술대학교 평생교육원] '25-26년 소프트웨어 유지보수 계약 체결의",
     "expectedMonth": "26년07월",
     "invoiceCycleRaw": "매월",
@@ -6439,7 +6436,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "견적 준비",
@@ -6475,11 +6472,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-097",
-    "sourceRow": 97,
     "contractName": "[디지털서울문화예술대학교] ''소프트웨어 유지보수 계약'' 진행의 건",
     "expectedMonth": "26년02월",
     "invoiceCycleRaw": "매월",
@@ -6510,7 +6507,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -6546,11 +6543,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-098",
-    "sourceRow": 98,
     "contractName": "[표준계약][배움] 2025년 공동인증 솔루션 통합 유지보수 계약 체결의 건",
     "expectedMonth": "26년05월",
     "invoiceCycleRaw": "년(06월)",
@@ -6581,7 +6578,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -6617,11 +6614,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "6월 청구 확인 필요"
   },
   {
     "id": "mc-099",
-    "sourceRow": 99,
     "contractName": "[표준계약][사이버한국외국어대학교] '26년 공동인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "25년11월",
     "invoiceCycleRaw": "년(12월)",
@@ -6652,7 +6649,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -6688,11 +6685,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-100",
-    "sourceRow": 100,
     "contractName": "[표준계약][서울원격평생교육원] '26년 공동인증 솔루션 및 SSL인증서 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(01월)",
@@ -6723,7 +6720,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -6759,11 +6756,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-101",
-    "sourceRow": 101,
     "contractName": "[표준계약][에듀윌] 2025년 에듀윌원격평생교육원 소프트웨어 유지보수 계약 체결의 건",
     "expectedMonth": "26년04월",
     "invoiceCycleRaw": "년(05월)",
@@ -6794,7 +6791,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -6830,11 +6827,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-102",
-    "sourceRow": 102,
     "contractName": "[표준계약][여기스터디] 여기스터디사이버평생교육원 2025년 소프트웨어 유지보수 계약 체결의 건",
     "expectedMonth": "26년03월",
     "invoiceCycleRaw": "년(04월)",
@@ -6865,7 +6862,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -6901,11 +6898,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-104",
-    "sourceRow": 104,
     "contractName": "[표준계약][전주비전대학교] 2026년 전주비전대학교부설원격평생교육원 소프트웨어 유지보수 발주 계약 체결의 건",
     "expectedMonth": "27년02월",
     "invoiceCycleRaw": "년(02월)",
@@ -6936,7 +6933,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -6972,11 +6969,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-105",
-    "sourceRow": 105,
     "contractName": "[표준계약][유타스] 2025년 영진사이버대학교 유지보수 계약 체결의 건",
     "expectedMonth": "27년02월",
     "invoiceCycleRaw": "매월 말",
@@ -7007,7 +7004,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -7043,11 +7040,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-106",
-    "sourceRow": 106,
     "contractName": "[표준계약][아이비김영] 26년 아이비원격평생교육원 공동인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(01월)",
@@ -7078,7 +7075,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -7114,11 +7111,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-107",
-    "sourceRow": 107,
     "contractName": "[표준계약][휴넷이지런] '25년 공동인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년05월",
     "invoiceCycleRaw": "년(05월)",
@@ -7149,7 +7146,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -7185,11 +7182,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-108",
-    "sourceRow": 108,
     "contractName": "[표준계약][굿어스데이터] '25-26년 세종사이버대학교 클라우드서비스 통합유지보수 계약 체결의 건",
     "expectedMonth": "26년08월",
     "invoiceCycleRaw": "년(03월)",
@@ -7220,7 +7217,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "사전 확인",
@@ -7256,11 +7253,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-109",
-    "sourceRow": 109,
     "contractName": "[표준계약][메가엠디] '25년 메가원격평생교육원 공동인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년05월",
     "invoiceCycleRaw": "년(09월)",
@@ -7291,7 +7288,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "계약진행 필요",
@@ -7327,11 +7324,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "6월 청구 확인 필요"
   },
   {
     "id": "mc-110",
-    "sourceRow": 110,
     "contractName": "[표준계약][비즈니스온커뮤니케이션] 24년 공동인증 솔루션 통합 유지보수 계약 체결의 건",
     "expectedMonth": "26년05월",
     "invoiceCycleRaw": "매월",
@@ -7362,7 +7359,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -7398,11 +7395,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-111",
-    "sourceRow": 111,
     "contractName": "[표준계약][투데이게이트] 한국건설엔지니어링협회 2026년 정보관리시스템 유지보수 발주 계약 진행의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -7433,7 +7430,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -7469,11 +7466,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-112",
-    "sourceRow": 112,
     "contractName": "[표준계약][KCC정보통신] 24-26년 한국철도공사 통합전산센터 전산장비 유지보수 용역 계약 체결의 건",
     "expectedMonth": "26년10월",
     "invoiceCycleRaw": "매월",
@@ -7504,7 +7501,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -7540,11 +7537,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-113",
-    "sourceRow": 113,
     "contractName": "[표준계약][(주)아몬드] 한국부동산원 26년 정보시스템(H/W부문) 유지관리 운영 용역 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(03,06,09,12)",
@@ -7575,7 +7572,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -7613,11 +7610,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-114",
-    "sourceRow": 114,
     "contractName": "[표준계약][한국전기기술인협회] 24년 공동인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년08월",
     "invoiceCycleRaw": "년(08월)",
@@ -7648,7 +7645,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "사전 확인",
@@ -7684,11 +7681,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-115",
-    "sourceRow": 115,
     "contractName": "[표준계약][대신통신기술] 2026년 한국에너지공단 PKI 툴킷 및 서버인증서 유지보수 계약 체결의 건",
     "expectedMonth": "27년02월",
     "invoiceCycleRaw": "년(02월)",
@@ -7719,7 +7716,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -7755,11 +7752,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-116",
-    "sourceRow": 116,
     "contractName": "[표준계약][티에스라인시스템] 26년 KOBACO(한국방송광고진흥공사) 정보시스템 통합유지운영 사업 용역_서울보증보험 연계 모듈 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -7790,7 +7787,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -7826,11 +7823,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-117",
-    "sourceRow": 117,
     "contractName": "[표준계약][티에스라인시스템] 중소기업중앙회 '22-25년 정보시스템 통합 유지보수 용역 2개월 연장 계약 체결의 건",
     "expectedMonth": "26년01월",
     "invoiceCycleRaw": "매월",
@@ -7861,7 +7858,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -7897,11 +7894,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-118",
-    "sourceRow": 118,
     "contractName": "[표준계약][이즈파크] 24년-26년 한국국제협력단(KOICA) 정보시스템 통합유지보수 용역 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -7932,7 +7929,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -7968,11 +7965,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-119",
-    "sourceRow": 119,
     "contractName": "[표준계약][유앤아이소프트] 25-27년 한국수력원자력 전산설비 및 시스템 SW분야 유지보수 계약 체결의 건",
     "expectedMonth": "27년08월",
     "invoiceCycleRaw": "격월",
@@ -8003,7 +8000,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -8039,11 +8036,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-120",
-    "sourceRow": 120,
     "contractName": "[표준계약][올포랜드] '25-27 FIU정보시스템 운영 및 유지관리_SG SecuKit SW유지보수 계약 체결의 건",
     "expectedMonth": "27년12월",
     "invoiceCycleRaw": "매월",
@@ -8074,7 +8071,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -8110,11 +8107,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-121",
-    "sourceRow": 121,
     "contractName": "[표준계약][한전KDN] 한국전력공사 2026년 정보인증도구(signGATE) 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(03,06,09,12)",
@@ -8145,7 +8142,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -8183,11 +8180,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-122",
-    "sourceRow": 122,
     "contractName": "[표준계약][스핀토테크놀러지] 한전KDN 24-26년 상용소프트웨어 유지보수 계약 체결의 건",
     "expectedMonth": "26년10월",
     "invoiceCycleRaw": "년",
@@ -8218,7 +8215,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -8254,11 +8251,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-123",
-    "sourceRow": 123,
     "contractName": "[표준계약][트루본] 2025년 한국도로공사 통합정보시스템(하이포탈 및 대외시스템) 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(04,07,10,12)",
@@ -8289,7 +8286,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -8327,11 +8324,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-124",
-    "sourceRow": 124,
     "contractName": "[표준계약][마루아이티] 2024년-2027년 전기공사공제조합 유지보수 사업 계약의 건",
     "expectedMonth": "27년03월",
     "invoiceCycleRaw": "매월",
@@ -8362,7 +8359,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -8398,11 +8395,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-125",
-    "sourceRow": 125,
     "contractName": "[표준계약][은우소프트] 한국전자통신연구원(ETRI) 2026년 전자조달시스템 유지보수 발주 계약 진행의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(05월)",
@@ -8433,7 +8430,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -8469,11 +8466,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-126",
-    "sourceRow": 126,
     "contractName": "[표준계약][이루온아이앤에스] '25-26년 방위사업청 정보시스템 통합 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -8504,7 +8501,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -8540,11 +8537,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-127",
-    "sourceRow": 127,
     "contractName": "[표준계약][이테크시스템] '25년 한국사회보장정보원 전산자원 통합유지관리 사업 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -8575,7 +8572,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -8611,11 +8608,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "6월 청구 확인 필요"
   },
   {
     "id": "mc-128",
-    "sourceRow": 128,
     "contractName": "[표준계약][소프트웨어공제조합] 26년 전자보증 보안툴킷 유지보수 계약 체결의 건",
     "expectedMonth": "26년03월",
     "invoiceCycleRaw": "매월",
@@ -8646,7 +8643,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -8690,11 +8687,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-129",
-    "sourceRow": 129,
     "contractName": "[표준계약][농심NDS] 2025~2026년 KSPO(국민체육진흥공단) 정보시스템 통합유지관리 계약의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -8725,7 +8722,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -8761,11 +8758,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-130",
-    "sourceRow": 130,
     "contractName": "[표준계약][요다정보기술] 2026년 별정우체국연금관리단 전산 인프라 통합 유지보수 용역 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -8796,7 +8793,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -8832,11 +8829,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-131",
-    "sourceRow": 131,
     "contractName": "[표준계약][웨이버스] 국민건강보험공단 '24-26년 정보시스템 통합유지관리 용역사업 변경 계약 체결의 건",
     "expectedMonth": "26년05월",
     "invoiceCycleRaw": "매월",
@@ -8867,7 +8864,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -8903,11 +8900,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-132",
-    "sourceRow": 132,
     "contractName": "[표준계약][코리아퍼스텍] 2025년 한국마사회 정보시스템 유지관리 사업 연장 계약 체결의 건",
     "expectedMonth": "26년04월",
     "invoiceCycleRaw": "매월",
@@ -8938,7 +8935,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -8974,11 +8971,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-133",
-    "sourceRow": 133,
     "contractName": "[표준계약][부산대학교병원] '25년 공동인증서 시스템 유지보수 용역 계약 체결의 건",
     "expectedMonth": "26년04월",
     "invoiceCycleRaw": "매월",
@@ -9009,7 +9006,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -9045,11 +9042,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-134",
-    "sourceRow": 134,
     "contractName": "[표준계약][메인아이티] 한국건설기술인협회 2025년 전산시스템 유지보수 계약 체결의 건",
     "expectedMonth": "27년04월",
     "invoiceCycleRaw": "매월",
@@ -9080,7 +9077,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -9116,11 +9113,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-135",
-    "sourceRow": 135,
     "contractName": "[표준계약][에스넷시스템] 한국지역난방공사 '25년 정보통합운영시스템 유지보수 계약 체결의 건",
     "expectedMonth": "26년07월",
     "invoiceCycleRaw": "매월",
@@ -9151,7 +9148,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "견적 준비",
@@ -9187,11 +9184,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-136",
-    "sourceRow": 136,
     "contractName": "[표준계약][새빛한빛] 공안과병원 2025년 유지보수 및 인증서 발주 계약 체결의 건",
     "expectedMonth": "26년06월",
     "invoiceCycleRaw": "년(07월)",
@@ -9222,7 +9219,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "청구 일정 확인",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "계약진행 필요",
@@ -9258,11 +9255,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "청구 일정 확인 필요"
   },
   {
     "id": "mc-138",
-    "sourceRow": 138,
     "contractName": "[표준계약][코가스서비스얼라이언스] 2025년 한국가스공사 보안운영 유지관리(전자입찰 서버 보완) 계약 체결의 건",
     "expectedMonth": "26년04월",
     "invoiceCycleRaw": "분기(09,12,03,04)",
@@ -9293,7 +9290,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -9331,11 +9328,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-139",
-    "sourceRow": 139,
     "contractName": "[표준계약][(주)오파스넷] 2023년 '일산병원종합의료정보시스템 통합유지보수' 계약 체결의 건",
     "expectedMonth": "26년02월",
     "invoiceCycleRaw": "매월",
@@ -9366,7 +9363,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -9402,11 +9399,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-140",
-    "sourceRow": 140,
     "contractName": "[표준계약][인천공항시설관리] 2026년 경영정보시스템 계약 및 시설관리 공동인증모듈 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "분기(03,06,09,12)",
@@ -9437,7 +9434,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -9475,11 +9472,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-141",
-    "sourceRow": 141,
     "contractName": "[표준계약][아이티룩스] 2025년 한국정보통신공사협회 기타 S/W 유지보수 용역 계약 진행의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -9510,7 +9507,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -9546,11 +9543,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-142",
-    "sourceRow": 142,
     "contractName": "[표준계약][(주)디엠아이시스템즈] 네오트랜스(신분당선) '26-28년 통합정보시스템 및 IT자산 운영/유지보수 발주 계약 체결의 건",
     "expectedMonth": "28년12월",
     "invoiceCycleRaw": "매월",
@@ -9581,7 +9578,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -9617,11 +9614,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-143",
-    "sourceRow": 143,
     "contractName": "[표준계약][케이엘정보통신] 2026년 국가철도공단 SecuKit NX 유지보수 계약 체결의 건",
     "expectedMonth": "28년12월",
     "invoiceCycleRaw": "년(03월)",
@@ -9652,7 +9649,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -9688,11 +9685,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-144",
-    "sourceRow": 144,
     "contractName": "[표준계약][엠티] LH(한국토지주택공사) 정보인프라 유지보수 용역 (2025년, 3차년도) 계약의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -9723,7 +9720,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -9759,11 +9756,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-145",
-    "sourceRow": 145,
     "contractName": "[표준계약][에스큐앤티] 한국소방시설협회 2026년 정보시스템 통합유지보수 계약 체결의 건",
     "expectedMonth": "28년01월",
     "invoiceCycleRaw": "매월",
@@ -9794,7 +9791,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -9830,11 +9827,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-146",
-    "sourceRow": 146,
     "contractName": "[표준계약][GSITM] GS칼텍스 2026년도 통합유지보수_서버인증서 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(01월)",
@@ -9865,7 +9862,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -9901,11 +9898,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-147",
-    "sourceRow": 147,
     "contractName": "[표준계약][아이앤텍] 26년 공인전자문서 시스템 SecuKit NX+HTML5 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(01월)",
@@ -9936,7 +9933,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -9980,11 +9977,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-148",
-    "sourceRow": 148,
     "contractName": "[표준계약][씨엠티정보통신] 2026년 한국보건산업진흥원 공동인증 솔루션 유지보수 발주 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -10015,7 +10012,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -10051,11 +10048,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-150",
-    "sourceRow": 150,
     "contractName": "[표준계약][비와이아이엔씨] 2026년 공무원연금공단 SG lxLinker(서울보증보험연계모듈) 유지보수 계약의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(03월)",
@@ -10086,7 +10083,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -10122,11 +10119,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-151",
-    "sourceRow": 151,
     "contractName": "[표준계약][(주)인터웹] 한국특허전략개발원 2026년 공동인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "25년12월",
     "invoiceCycleRaw": "년(12월)",
@@ -10157,7 +10154,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -10193,11 +10190,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-152",
-    "sourceRow": 152,
     "contractName": "[표준계약][이나인페이] 2026년 공동인증 솔루션 SecuKit NX+HTML5 유지보수 계약 체결의 건",
     "expectedMonth": "26년02월",
     "invoiceCycleRaw": "년(03월)",
@@ -10228,7 +10225,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -10272,11 +10269,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-153",
-    "sourceRow": 153,
     "contractName": "[표준계약][더위버크리에이티브] 2026년 한국지엠 온라인 자동차 판매 사이트 공동인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "27년03월",
     "invoiceCycleRaw": "년(04월)",
@@ -10307,7 +10304,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -10343,11 +10340,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-154",
-    "sourceRow": 154,
     "contractName": "[표준계약][화성개발] 전자조달시스템 SecuKit NX+HTML5 유지보수 계약 체결의 건",
     "expectedMonth": "27년03월",
     "invoiceCycleRaw": "년(04월)",
@@ -10378,7 +10375,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -10422,11 +10419,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-155",
-    "sourceRow": 155,
     "contractName": "[표준계약][엔젤넷] 2026년 공동인증 솔루션 SecuTAX NXS 유지보수 계약 체결의 건",
     "expectedMonth": "27년03월",
     "invoiceCycleRaw": "년(04월)",
@@ -10457,7 +10454,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -10501,11 +10498,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-156",
-    "sourceRow": 156,
     "contractName": "[표준계약][한국화학연구원] 2026년 공동인증서 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "27년03월",
     "invoiceCycleRaw": "년(04월)",
@@ -10536,7 +10533,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -10572,11 +10569,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-157",
-    "sourceRow": 157,
     "contractName": "[표준계약][유니와이즈원격평생교육원] 2026년 공동인증 솔루션 SecuKit NX 유지보수 계약 체결의 건",
     "expectedMonth": "27년03월",
     "invoiceCycleRaw": "년(04월)",
@@ -10607,7 +10604,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -10643,11 +10640,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-158",
-    "sourceRow": 158,
     "contractName": "[표준계약][엠피원(주)] 2026년 인터넷 보증서 발급시스템 SecuKit NX 통합 유지보수 계약 체결의 건",
     "expectedMonth": "27년03월",
     "invoiceCycleRaw": "년(03월)",
@@ -10678,7 +10675,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -10714,11 +10711,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-159",
-    "sourceRow": 159,
     "contractName": "[표준계약][케이엘정보통신] 2025년 한국기술사회 전산시스템 SecuKit NX+HTML5 유지보수 계약 체결의 건",
     "expectedMonth": "26년04월",
     "invoiceCycleRaw": "년(05월)",
@@ -10749,7 +10746,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -10793,11 +10790,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-160",
-    "sourceRow": 160,
     "contractName": "[표준계약][메타케어] '25년 EMR시스템 공동인증 모듈 유지보수 계약 체결의 건",
     "expectedMonth": "26년04월",
     "invoiceCycleRaw": "년(05월)",
@@ -10828,7 +10825,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -10864,11 +10861,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-161",
-    "sourceRow": 161,
     "contractName": "[표준계약][LG마그나이파워트레인] 2025년 협력사 자료요청 시스템 공동인증 솔루션 SW 유지보수 계약 체결의 건",
     "expectedMonth": "26년06월",
     "invoiceCycleRaw": "년(07월)",
@@ -10899,7 +10896,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "청구 일정 확인",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "계약진행 필요",
@@ -10935,11 +10932,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "청구 일정 확인 필요"
   },
   {
     "id": "mc-162",
-    "sourceRow": 162,
     "contractName": "[표준계약][국가평생교육진흥원] 2025년 공동인증 솔루션 유지보수 기술지원 계약 체결의 건",
     "expectedMonth": "26년07월",
     "invoiceCycleRaw": "년(07월)",
@@ -10970,7 +10967,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "청구 일정 확인",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "견적 준비",
@@ -11006,11 +11003,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "청구 일정 확인 필요"
   },
   {
     "id": "mc-163",
-    "sourceRow": 163,
     "contractName": "[표준계약][비알] 2025년 경기도시주택공사 유지보수 기술지원 계약 체결의 건",
     "expectedMonth": "26년06월",
     "invoiceCycleRaw": "년(07월)",
@@ -11041,7 +11038,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "청구 일정 확인",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "견적 준비",
@@ -11077,11 +11074,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "청구 일정 확인 필요"
   },
   {
     "id": "mc-164",
-    "sourceRow": 164,
     "contractName": "[표준계약][HS화성] '25-26년 전자조달시스템 SecuKit NX+HTML5 유지보수 계약 체결의 건",
     "expectedMonth": "26년08월",
     "invoiceCycleRaw": "년(09월)",
@@ -11112,7 +11109,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "사전 확인",
@@ -11156,11 +11153,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-165",
-    "sourceRow": 165,
     "contractName": "[표준계약][삼성이앤에이] '25-26년 전자계약시스템 SGlxLinker 솔루션 유지보수 용역 계약 체결의 건",
     "expectedMonth": "26년07월",
     "invoiceCycleRaw": "년(08월)",
@@ -11191,7 +11188,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "견적 준비",
@@ -11227,11 +11224,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-166",
-    "sourceRow": 166,
     "contractName": "[표준계약][경기대학교] 경기대학교원격교육원 공동인증 솔루션 SecuKit NX 유지보수 계약 체결의 건",
     "expectedMonth": "26년08월",
     "invoiceCycleRaw": "년",
@@ -11262,7 +11259,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "사전 확인",
@@ -11298,11 +11295,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-167",
-    "sourceRow": 167,
     "contractName": "[표준계약][엠티데이타] 24-26년 우체국금융시스템 프로그램 유지 운영관리 용역 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -11333,7 +11330,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -11369,11 +11366,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-168",
-    "sourceRow": 168,
     "contractName": "[표준계약][현대엔지니어링] '25-26년 서울보증보험 연계모듈 SGlxLinker 유지보수 계약 체결의 건",
     "expectedMonth": "26년09월",
     "invoiceCycleRaw": "년(12월)",
@@ -11404,7 +11401,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "사전 확인",
@@ -11440,11 +11437,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-169",
-    "sourceRow": 169,
     "contractName": "[표준계약][케이씨넷] 관세청 전산장비 전환 사업 서울보증보험 연계모듈 유지보수 계약 체결의 건",
     "expectedMonth": "26년05월",
     "invoiceCycleRaw": "년(12월)",
@@ -11475,7 +11472,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -11511,11 +11508,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-170",
-    "sourceRow": 170,
     "contractName": "[표준계약][가비아] '26년 하이웍스 서비스 공동인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "년(01월)",
@@ -11546,7 +11543,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -11582,11 +11579,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-171",
-    "sourceRow": 171,
     "contractName": "[표준계약][아이티센씨티에스] 서울보증보험 연계모듈 SGlxLinker 유지보수 계약 체결의 건",
     "expectedMonth": "27년01월",
     "invoiceCycleRaw": "년(01월)",
@@ -11617,7 +11614,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -11653,11 +11650,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-172",
-    "sourceRow": 172,
     "contractName": "[표준계약][아이티센엔택] 서울보증보험 연계모듈 SGlxLinker 유지보수 계약 체결의 건",
     "expectedMonth": "27년01월",
     "invoiceCycleRaw": "년(01월)",
@@ -11688,7 +11685,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -11724,11 +11721,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-173",
-    "sourceRow": 173,
     "contractName": "[표준계약][SKIET] 2026년 BieT 전자인증 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년11월",
     "invoiceCycleRaw": "년(10월)",
@@ -11759,7 +11756,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -11795,11 +11792,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-174",
-    "sourceRow": 174,
     "contractName": "[표준계약][총신대학교부속원격평생교육원] 공동인증 솔루션 SecuKit NX 유지보수 계약 체결의 건",
     "expectedMonth": "26년01월",
     "invoiceCycleRaw": "년(02월)",
@@ -11830,7 +11827,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -11866,11 +11863,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-175",
-    "sourceRow": 175,
     "contractName": "[표준계약][LX하우시스] 서울보증보험 연계모듈 SGlxLinker 정보처리용역 계약 체결의 건",
     "expectedMonth": "26년01월",
     "invoiceCycleRaw": "매월 말",
@@ -11901,7 +11898,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -11937,11 +11934,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-176",
-    "sourceRow": 176,
     "contractName": "[표준계약][케이투웹테크] '25~26년 부대조달정보체계 유지보수 용역 내 PKI 솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년12월",
     "invoiceCycleRaw": "매월",
@@ -11972,7 +11969,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -12008,11 +12005,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "6월 청구 확인 필요"
   },
   {
     "id": "mc-177",
-    "sourceRow": 177,
     "contractName": "[코빗] 코인거래소 입출금서비스 공동인증서 PKI 솔루션 유지보수 계약",
     "expectedMonth": "26년4월",
     "invoiceCycleRaw": "년(05월)",
@@ -12043,7 +12040,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "기한경과",
@@ -12079,11 +12076,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-180",
-    "sourceRow": 180,
     "contractName": "[브레넥스] KT 세무로 공동인증 솔루션 전환 프로젝트 유지보수 계약",
     "expectedMonth": "26년06월",
     "invoiceCycleRaw": "매월",
@@ -12114,7 +12111,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "계약진행 필요",
@@ -12150,11 +12147,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-181",
-    "sourceRow": 181,
     "contractName": "[와이제이에듀케이션] '26년 공동인증 솔루션 유지보수 계약",
     "expectedMonth": "26년01월",
     "invoiceCycleRaw": "년",
@@ -12185,7 +12182,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -12221,11 +12218,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-182",
-    "sourceRow": 182,
     "contractName": "[뉴엠원격평생교육원] '26년 공동인증 솔루션 유지보수 계약",
     "expectedMonth": "26년01월",
     "invoiceCycleRaw": "년",
@@ -12256,7 +12253,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -12292,11 +12289,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-183",
-    "sourceRow": 183,
     "contractName": "[표준계약][(주)LF네트웍스] 26년도 공동인증솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "27년01월",
     "invoiceCycleRaw": "년",
@@ -12327,7 +12324,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -12363,11 +12360,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-185",
-    "sourceRow": 185,
     "contractName": "[표준계약][(주)더즌] 26년도 전자세금계산서시스템 공동인증솔루션 SecuTax NXS 유지보수 계약 체결의 건",
     "expectedMonth": "27년01월",
     "invoiceCycleRaw": "년(03월)",
@@ -12398,7 +12395,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -12442,11 +12439,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-186",
-    "sourceRow": 186,
     "contractName": "[표준계약][(주)비즈니스온커뮤니케이션] 케이티클라우드(KT클라우드) 2026년 공동인증솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년02월",
     "invoiceCycleRaw": "매월",
@@ -12477,7 +12474,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -12513,11 +12510,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-187",
-    "sourceRow": 187,
     "contractName": "[표준계약][SK이노베이션] 협력회사 SHE 포탈 공인인증솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년02월",
     "invoiceCycleRaw": "분기(4,7,11,1)",
@@ -12548,7 +12545,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -12586,11 +12583,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-194",
-    "sourceRow": 194,
     "contractName": "[표준계약][포시에스] '25-26년 NH투자증권 공동인증 솔루션 유지보수 발주 계약 체결의 건",
     "expectedMonth": "25년10월",
     "invoiceCycleRaw": "분기",
@@ -12621,7 +12618,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행 후 서류 제출",
     "billingCycle": "분기",
     "billingDueRule": "분기월 25일",
-    "billingStatus": "서류요청",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [
       "검수확인서"
@@ -12659,11 +12656,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-196",
-    "sourceRow": 196,
     "contractName": "다우기술 / 키움캐피탈 / 재고금융시스템",
     "expectedMonth": "",
     "invoiceCycleRaw": "미확인",
@@ -12694,7 +12691,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "청구 일정 확인",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -12730,11 +12727,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "청구 일정 확인 필요"
   },
   {
     "id": "mc-198",
-    "sourceRow": 198,
     "contractName": "[표준계약][한국부동산원] 리츠정보시스템 공동인증툴킷 유지보수 계약 체결의 건",
     "expectedMonth": "26년 1월",
     "invoiceCycleRaw": "년(01월)",
@@ -12765,7 +12762,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -12801,11 +12798,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-199",
-    "sourceRow": 199,
     "contractName": "[표준계약][사학연금공단] 2026년 서울보증보험 연계 모듈(SG IxLinker) 유지보수 계약 체결의 건",
     "expectedMonth": "26년01월",
     "invoiceCycleRaw": "년",
@@ -12836,7 +12833,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -12872,11 +12869,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   },
   {
     "id": "mc-201",
-    "sourceRow": 201,
     "contractName": "[비표준계약][IBK시스템] IBK 카드 플랫폼 3차 유지관리(전자서명) 구매 계약 체결의 건",
     "expectedMonth": "26년 2월",
     "invoiceCycleRaw": "매월",
@@ -12907,7 +12904,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -12943,11 +12940,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-202",
-    "sourceRow": 202,
     "contractName": "[표준계약][제이디텍] 2026년 국토안전관리원 KISCON 연계용 정보보안 S/W 유지보수 발주 계약 체결의 건",
     "expectedMonth": "26년 01월",
     "invoiceCycleRaw": "매월",
@@ -12978,7 +12975,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "매월",
     "billingDueRule": "당월 5일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료 / 6월 처리대상",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -13014,11 +13011,11 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료, 6월 청구 확인 필요"
   },
   {
     "id": "mc-203",
-    "sourceRow": 203,
     "contractName": "[표준계약][주식회사 한평생그룹] 2026년 덧셈원격평생교육원 공동인증솔루션 유지보수 계약 체결의 건",
     "expectedMonth": "26년04월",
     "invoiceCycleRaw": "년(04월)",
@@ -13049,7 +13046,7 @@ export const maintenanceContracts = [
     "billingMethod": "정발행",
     "billingCycle": "연 1회",
     "billingDueRule": "계약월 25일",
-    "billingStatus": "발행예정",
+    "billingStatus": "1~5월 처리완료",
     "xmlUploadRequired": false,
     "requiredDocuments": [],
     "renewalStatus": "정상",
@@ -13085,6 +13082,7 @@ export const maintenanceContracts = [
         "contactType": "기술/공문"
       }
     ],
-    "memo": "엑셀 원본 기준 자동 이관. 제품/수량/담당자는 계약명·계약사 기준으로 추정 입력."
+    "memo": "계약 갱신, 청구 처리, 고객 요청사항 등 특이사항을 기록합니다.",
+    "billingProgress": "5월까지 처리완료"
   }
 ];

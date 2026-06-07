@@ -3630,3 +3630,63 @@ button.riskItem {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* Daki font mapping requested for maintenance UI. Font files are not bundled in this project; these family names apply when the Daki fonts are installed or provided by the browser environment. */
+:root {
+  --font-title-daki: "Daki M Title", "Daki M", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  --font-emphasis-daki: "Daki B", "Daki M", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  --font-body-daki: "Daki M", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  --font-light-daki: "Daki L", "Daki M", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-body-daki);
+}
+
+h1, h2, h3, h4,
+.loginIntroCopy h1,
+.viewHeader h1,
+.maintenanceHero h2,
+.maintenancePanelHeader h3,
+.sidebarBrand,
+.loginBrand {
+  font-family: var(--font-title-daki);
+}
+
+strong,
+b,
+th,
+button,
+.maintenanceKpiCard strong,
+.maintenanceHeroBadge strong,
+.amountCards strong,
+.maintenanceStatus {
+  font-family: var(--font-emphasis-daki);
+}
+
+small,
+.panelHint,
+.cardDescription,
+.maintenanceHero p,
+.maintenancePanelHeader p,
+.maintenanceTable small,
+.productSummaryList small,
+.partnerList small {
+  font-family: var(--font-light-daki);
+}
+
+.monthRevenueStrip span.completed {
+  background: #eef8f3;
+  border-color: #bbebcf;
+  color: #166534;
+}
+
+.monthRevenueStrip span.current {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+}

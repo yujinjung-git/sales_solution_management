@@ -973,6 +973,7 @@ function CrmShell({ user, onLogout }) {
 function MaintenanceContractsView() {
     const referenceDate = "2026-06-07";
     const currentMonth = referenceDate.slice(0, 7);
+    const currentBillingMonthIndex = Number(currentMonth.slice(5, 7)) - 1;
     const nextMonthDate = new Date(`${currentMonth}-01T00:00:00`);
     nextMonthDate.setMonth(nextMonthDate.getMonth() + 1);
     const nextMonth = `${nextMonthDate.getFullYear()}-${String(nextMonthDate.getMonth() + 1).padStart(2, "0")}`;
@@ -981,41 +982,45 @@ function MaintenanceContractsView() {
     const [detailTab, setDetailTab] = useState("basic");
     const getMonth = (value) => value?.slice(0, 7);
     const monthLabel = (value) => value ? `${Number(value.slice(5, 7))}월` : "미확인";
-    const partners = useMemo(() => {
-        const map = new Map();
-        maintenanceContracts.forEach((contract) => {
-            const key = contract.contractCompany || "미확인";
-            const current = map.get(key) ?? { name: key, count: 0, amount: 0, endUsers: new Set(), products: new Set() };
-            current.count += 1;
-            current.amount += contract.totalAmount || 0;
-            current.endUsers.add(contract.endUser);
-            contract.products.forEach((product) => current.products.add(product.productName));
-            map.set(key, current);
-        });
-        return Array.from(map.values()).map((item) => ({
-            ...item,
-            endUserCount: item.endUsers.size,
-            productNames: Array.from(item.products).slice(0, 3).join(", ") || "미확인",
-        })).sort((a, b) => b.count - a.count || b.amount - a.amount);
-    }, []);
+    const isCurrentBillingTarget = (contract) => Number(contract.monthlyRevenue?.[currentBillingMonthIndex] || 0) > 0 || getMonth(contract.endDate) === currentMonth;
+    const partnerDefinitions = [
+        { key: "partnerEmro", label: "엠로", match: (contract) => contract.contractCompany === "엠로" || contract.contractCompanyRaw === "엠로" },
+        { key: "partnerLg", label: "LG CNS", match: (contract) => contract.contractCompany === "LG CNS" || contract.contractCompanyRaw === "LG CNS" },
+        { key: "partnerHyundai", label: "현대오토에버", match: (contract) => [contract.contractCompany, contract.contractCompanyRaw, contract.endUser, contract.contractName].join(" ").includes("현대오토에버") },
+        { key: "partnerDaou", label: "다우기술", match: (contract) => [contract.contractCompany, contract.contractCompanyRaw, contract.endUser, contract.contractName].join(" ").includes("다우기술") },
+        { key: "partnerForcs", label: "포시에스", match: (contract) => [contract.contractCompany, contract.contractCompanyRaw, contract.endUser, contract.contractName].join(" ").includes("포시에스") },
+        { key: "partnerSk", label: "SK그룹사", match: (contract) => [contract.contractCompany, contract.contractCompanyRaw, contract.endUser, contract.contractName].join(" ").toUpperCase().includes("SK") },
+    ];
+    const partnerSummaries = useMemo(() => partnerDefinitions.map((definition) => {
+        const contracts = maintenanceContracts.filter(definition.match);
+        const endUsers = new Set(contracts.map((contract) => contract.endUser));
+        const products = new Set();
+        contracts.forEach((contract) => contract.products.forEach((product) => products.add(product.productName)));
+        return {
+            ...definition,
+            count: contracts.length,
+            amount: contracts.reduce((sum, contract) => sum + (contract.totalAmount || 0), 0),
+            endUserCount: endUsers.size,
+            productNames: Array.from(products).slice(0, 3).join(", ") || "미확인",
+        };
+    }).filter((partner) => partner.count > 0), []);
     const currentMonthContracts = useMemo(() => maintenanceContracts.filter((contract) => getMonth(contract.endDate) === currentMonth), [currentMonth]);
     const nextMonthContracts = useMemo(() => maintenanceContracts.filter((contract) => getMonth(contract.endDate) === nextMonth), [nextMonth]);
-    const billingContracts = useMemo(() => maintenanceContracts.filter((contract) => getMonth(contract.endDate) === currentMonth || contract.billingCycle === "매월"), [currentMonth]);
-    const xmlContracts = useMemo(() => maintenanceContracts.filter((contract) => contract.xmlUploadRequired), []);
-    const reverseContracts = useMemo(() => maintenanceContracts.filter((contract) => contract.billingMethod === "역발행"), []);
-    const documentContracts = useMemo(() => maintenanceContracts.filter((contract) => contract.requiredDocuments.length > 0), []);
+    const billingContracts = useMemo(() => maintenanceContracts.filter(isCurrentBillingTarget), [currentMonth]);
+    const xmlContracts = useMemo(() => billingContracts.filter((contract) => contract.xmlUploadRequired), [billingContracts]);
+    const reverseContracts = useMemo(() => billingContracts.filter((contract) => contract.billingMethod === "역발행"), [billingContracts]);
+    const documentContracts = useMemo(() => billingContracts.filter((contract) => contract.requiredDocuments.length > 0), [billingContracts]);
     const inspectionContracts = useMemo(() => maintenanceContracts.filter((contract) => contract.inspectionIncluded), []);
     const filterMeta = {
-        all: { title: "전체 유지보수 계약", description: "엑셀에서 이관한 2026년 이후 유효 계약 전체" },
+        all: { title: "전체 유지보수 계약", description: "등록된 2026년 이후 유효 계약 전체" },
         current: { title: `${monthLabel(currentMonth)} 만료 예정`, description: "이번 달 재계약·갱신 확인이 필요한 계약" },
         next: { title: `${monthLabel(nextMonth)} 만료 예정`, description: "다음 달 만료 전 견적 준비가 필요한 계약" },
-        billing: { title: "이번 달 청구 처리", description: "매월 청구 또는 당월 만료 계약 기준 청구 확인 대상" },
-        xml: { title: "XML 업로드 필요", description: "정발행 후 고객사 시스템 업로드가 필요한 계약" },
-        reverse: { title: "역발행 대상", description: "고객사 역발행 또는 포털 확인이 필요한 계약" },
-        documents: { title: "서류 제출 필요", description: "검수확인서, 거래명세서, 포털 확인 등 선행 작업이 필요한 계약" },
+        billing: { title: "6월 청구 처리", description: "1~5월 처리 완료 기준, 6월 청구 확인 대상" },
+        xml: { title: "XML 업로드 필요", description: "정발행 후 고객사 시스템 업로드가 필요한 6월 청구 대상" },
+        reverse: { title: "역발행 대상", description: "고객사 역발행 또는 포털 확인이 필요한 6월 청구 대상" },
+        documents: { title: "서류 제출 필요", description: "검수확인서, 거래명세서, 포털 확인 등 선행 작업이 필요한 6월 청구 대상" },
         inspection: { title: "정기점검 포함", description: "정기점검이 계약 조건에 포함된 계약" },
-        partnerLg: { title: "파트너사: LG CNS", description: "계약사가 LG CNS인 유지보수 계약" },
-        partnerEmro: { title: "파트너사: 엠로", description: "계약사가 엠로인 유지보수 계약" },
+        ...Object.fromEntries(partnerDefinitions.map((partner) => [partner.key, { title: `파트너사: ${partner.label}`, description: `${partner.label} 기준으로 묶은 유지보수 계약` }]))
     };
     function getFilteredContracts(filter) {
         if (filter === "current") return currentMonthContracts;
@@ -1025,8 +1030,8 @@ function MaintenanceContractsView() {
         if (filter === "reverse") return reverseContracts;
         if (filter === "documents") return documentContracts;
         if (filter === "inspection") return inspectionContracts;
-        if (filter === "partnerLg") return maintenanceContracts.filter((contract) => contract.contractCompany === "LG CNS");
-        if (filter === "partnerEmro") return maintenanceContracts.filter((contract) => contract.contractCompany === "엠로");
+        const partner = partnerDefinitions.find((item) => item.key === filter);
+        if (partner) return maintenanceContracts.filter(partner.match);
         return maintenanceContracts;
     }
     const filteredContracts = useMemo(() => getFilteredContracts(activeFilter).slice().sort((a, b) => (a.endDate || "").localeCompare(b.endDate || "") || b.totalAmount - a.totalAmount), [activeFilter, currentMonth, nextMonth]);
@@ -1038,14 +1043,14 @@ function MaintenanceContractsView() {
     }, [activeFilter, filteredContracts, selectedId]);
     function activateFilter(filter) {
         setActiveFilter(filter);
-        const first = getFilteredContracts(filter).sort((a, b) => (a.endDate || "").localeCompare(b.endDate || ""))[0];
+        const first = getFilteredContracts(filter).slice().sort((a, b) => (a.endDate || "").localeCompare(b.endDate || ""))[0];
         if (first) setSelectedId(first.id);
     }
     const kpiCards = [
-        { key: "all", label: "전체 계약", value: `${maintenanceContracts.length}건`, names: partners.slice(0, 3).map((item) => `${item.name} ${item.count}건`) },
+        { key: "all", label: "전체 계약", value: `${maintenanceContracts.length}건`, names: partnerSummaries.slice(0, 3).map((item) => `${item.label} ${item.count}건`) },
         { key: "current", label: "당월 만료 예정", value: `${currentMonthContracts.length}건`, names: currentMonthContracts.slice(0, 4).map((item) => item.endUser) },
         { key: "next", label: "익월 만료 예정", value: `${nextMonthContracts.length}건`, names: nextMonthContracts.slice(0, 4).map((item) => item.endUser) },
-        { key: "billing", label: "이번 달 청구 처리", value: `${billingContracts.length}건`, names: [`정발행 ${billingContracts.filter((item) => item.billingMethod.includes("정발행")).length}건`, `역발행 ${reverseContracts.length}건`, `XML ${xmlContracts.length}건`] },
+        { key: "billing", label: "6월 청구 처리", value: `${billingContracts.length}건`, names: [`5월까지 완료`, `정발행 ${billingContracts.filter((item) => item.billingMethod.includes("정발행")).length}건`, `역발행 ${reverseContracts.length}건`] },
     ];
     const productSummary = useMemo(() => {
         const map = new Map();
@@ -1062,9 +1067,9 @@ function MaintenanceContractsView() {
     return (<div className="maintenancePage">
       <section className="maintenanceHero">
         <div>
-          <p className="eyebrow">엑셀 실데이터 기반 · 기준일 {maintenanceGeneratedAt}</p>
+          <p className="eyebrow">유지보수 계약 데이터 · 기준일 {maintenanceGeneratedAt}</p>
           <h2>유지보수 계약관리</h2>
-          <p>계약 만료, 청구 방식, 제품/수량, 파트너사 현황을 실제 유지보수 엑셀 데이터로 확인합니다.</p>
+          <p>계약 만료, 6월 청구 처리, 제품/수량, 주요 파트너사 현황을 한 화면에서 확인합니다.</p>
         </div>
         <div className="maintenanceHeroBadge">
           <strong>{formatCurrency(maintenanceContracts.reduce((sum, item) => sum + item.totalAmount, 0))}</strong>
@@ -1085,8 +1090,7 @@ function MaintenanceContractsView() {
         <button className={activeFilter === "reverse" ? "active" : ""} onClick={() => activateFilter("reverse")}>역발행 {reverseContracts.length}건</button>
         <button className={activeFilter === "documents" ? "active" : ""} onClick={() => activateFilter("documents")}>서류 제출 {documentContracts.length}건</button>
         <button className={activeFilter === "inspection" ? "active" : ""} onClick={() => activateFilter("inspection")}>정기점검 {inspectionContracts.length}건</button>
-        <button className={activeFilter === "partnerLg" ? "active" : ""} onClick={() => activateFilter("partnerLg")}>LG CNS {maintenanceContracts.filter((item) => item.contractCompany === "LG CNS").length}건</button>
-        <button className={activeFilter === "partnerEmro" ? "active" : ""} onClick={() => activateFilter("partnerEmro")}>엠로 {maintenanceContracts.filter((item) => item.contractCompany === "엠로").length}건</button>
+        {partnerSummaries.map((partner) => <button key={partner.key} className={activeFilter === partner.key ? "active" : ""} onClick={() => activateFilter(partner.key)}>{partner.label} {partner.count}건</button>)}
       </section>
 
       <div className="maintenanceLayout">
@@ -1102,7 +1106,7 @@ function MaintenanceContractsView() {
             <table className="maintenanceTable">
               <thead><tr><th>계약명</th><th>End-User</th><th>계약사</th><th>만료일</th><th>계약금액</th><th>청구방식</th><th>상태</th></tr></thead>
               <tbody>{filteredContracts.map((contract) => (<tr key={contract.id} className={selectedContract?.id === contract.id ? "selected" : ""} onClick={() => setSelectedId(contract.id)}>
-                <td><strong>{contract.contractName}</strong><small>원본 {contract.sourceRow}행 · {contract.contractPeriodText}</small></td>
+                <td><strong>{contract.contractName}</strong><small>{contract.contractPeriodText}</small></td>
                 <td>{contract.endUser}</td><td>{contract.contractCompany}</td><td>{contract.endDate}</td><td>{formatCurrency(contract.totalAmount)}</td><td>{contract.billingMethod}</td><td><span className={`maintenanceStatus ${contract.renewalStatus.includes("경과") ? "danger" : contract.renewalStatus.includes("준비") || contract.renewalStatus.includes("필요") ? "warn" : "ok"}`}>{contract.renewalStatus}</span></td>
               </tr>))}</tbody>
             </table>
@@ -1112,8 +1116,8 @@ function MaintenanceContractsView() {
         <aside className="maintenancePanel maintenanceSidePanel">
           <h3>주요 파트너사</h3>
           <div className="partnerList">
-            {partners.filter((partner) => ["LG CNS", "엠로"].includes(partner.name)).map((partner) => (<button key={partner.name} onClick={() => activateFilter(partner.name === "LG CNS" ? "partnerLg" : "partnerEmro")} className={activeFilter === (partner.name === "LG CNS" ? "partnerLg" : "partnerEmro") ? "active" : ""}>
-              <span>{partner.name}</span><strong>{partner.count}건</strong><small>{formatCurrency(partner.amount)} · End-User {partner.endUserCount}곳</small>
+            {partnerSummaries.map((partner) => (<button key={partner.key} onClick={() => activateFilter(partner.key)} className={activeFilter === partner.key ? "active" : ""}>
+              <span>{partner.label}</span><strong>{partner.count}건</strong><small>{formatCurrency(partner.amount)} · End-User {partner.endUserCount}곳</small>
             </button>))}
           </div>
           <h3>제품별 고객관리</h3>
@@ -1129,16 +1133,16 @@ function MaintenanceContractsView() {
           <span>{selectedContract.endUser}</span>
         </div>
         <div className="maintenanceTabs">
-          {[['basic','기본정보'], ['billing','청구정보'], ['contacts','담당자'], ['memo','메모/파일']].map(([key, label]) => <button key={key} className={detailTab === key ? "active" : ""} onClick={() => setDetailTab(key)}>{label}</button>)}
+          {[["basic","기본정보"], ["billing","청구정보"], ["contacts","담당자"], ["memo","메모"]].map(([key, label]) => <button key={key} className={detailTab === key ? "active" : ""} onClick={() => setDetailTab(key)}>{label}</button>)}
         </div>
         {detailTab === "basic" && (<div className="maintenanceDetailGrid">
-          <div className="detailBlock wide"><h4>계약 기본정보</h4><dl><DetailTerm label="계약명" value={selectedContract.contractName}/><DetailTerm label="End-User" value={selectedContract.endUser}/><DetailTerm label="계약사" value={`${selectedContract.contractCompany} (${selectedContract.contractCompanyRaw})`}/><DetailTerm label="사업자번호" value={selectedContract.businessNumber}/><DetailTerm label="계약기간" value={`${selectedContract.startDate} ~ ${selectedContract.endDate}`}/><DetailTerm label="계약예정월" value={selectedContract.expectedMonth}/><DetailTerm label="정기점검" value={`${selectedContract.inspectionIncluded ? "포함" : "미포함"} / ${selectedContract.inspectionCount}`}/></dl></div>
+          <div className="detailBlock wide"><h4>계약 기본정보</h4><dl><DetailTerm label="계약명" value={selectedContract.contractName}/><DetailTerm label="End-User" value={selectedContract.endUser}/><DetailTerm label="계약사" value={selectedContract.contractCompany}/><DetailTerm label="사업자번호" value={selectedContract.businessNumber}/><DetailTerm label="계약기간" value={`${selectedContract.startDate} ~ ${selectedContract.endDate}`}/><DetailTerm label="계약예정월" value={selectedContract.expectedMonth}/><DetailTerm label="정기점검" value={`${selectedContract.inspectionIncluded ? "포함" : "미포함"} / ${selectedContract.inspectionCount}`}/></dl></div>
           <div className="detailBlock wide"><h4>계약 제품 및 수량</h4><table className="miniTable"><thead><tr><th>제품명</th><th>제품구분</th><th>수량</th><th>라이선스 기준</th><th>정기점검</th><th>유지보수 범위</th></tr></thead><tbody>{selectedContract.products.map((product) => <tr key={product.productName}><td>{product.productName}</td><td>{product.productCategory}</td><td>{product.quantity}</td><td>{product.licenseType}</td><td>{product.inspection}</td><td>{product.maintenanceScope}</td></tr>)}</tbody></table></div>
-          <div className="detailBlock wide"><h4>계약 금액</h4><div className="amountCards"><div><span>연간 계약금액</span><strong>{formatCurrency(selectedContract.totalAmount)}</strong></div><div><span>월 평균 매출</span><strong>{formatCurrency(Math.round(selectedContract.totalAmount / 12))}</strong></div><div><span>청구 주기</span><strong>{selectedContract.billingCycle}</strong></div><div><span>청구 방식</span><strong>{selectedContract.billingMethod}</strong></div></div><div className="monthRevenueStrip">{selectedContract.monthlyRevenue.map((amount, index) => <span key={index}><b>{index + 1}월</b>{amount ? formatCurrency(amount) : '-'}</span>)}</div></div>
+          <div className="detailBlock wide"><h4>계약 금액</h4><div className="amountCards"><div><span>연간 계약금액</span><strong>{formatCurrency(selectedContract.totalAmount)}</strong></div><div><span>월 평균 매출</span><strong>{formatCurrency(Math.round(selectedContract.totalAmount / 12))}</strong></div><div><span>청구 주기</span><strong>{selectedContract.billingCycle}</strong></div><div><span>청구 방식</span><strong>{selectedContract.billingMethod}</strong></div></div><div className="monthRevenueStrip">{selectedContract.monthlyRevenue.map((amount, index) => <span key={index} className={index < currentBillingMonthIndex ? "completed" : index === currentBillingMonthIndex ? "current" : ""}><b>{index + 1}월</b>{amount ? formatCurrency(amount) : '-'}</span>)}</div></div>
         </div>)}
-        {detailTab === "billing" && (<div className="maintenanceDetailGrid"><div className="detailBlock"><h4>청구 방식</h4><dl><DetailTerm label="발행 방식" value={selectedContract.billingMethod}/><DetailTerm label="발행 주기" value={selectedContract.billingCycle}/><DetailTerm label="발행일" value={selectedContract.billingDueRule}/><DetailTerm label="처리 상태" value={selectedContract.billingStatus}/><DetailTerm label="XML 업로드" value={selectedContract.xmlUploadRequired ? "필요" : "불필요"}/><DetailTerm label="필요 서류" value={selectedContract.requiredDocuments.join(', ') || '없음'}/></dl></div><div className="detailBlock"><h4>처리 주의사항</h4><p>{selectedContract.billingMethod === "정발행 후 XML 업로드" ? "정발행 완료 후 XML 파일을 고객사 시스템에 업로드해야 합니다." : selectedContract.billingMethod === "역발행" ? "고객사 포털의 역발행 요청 여부를 먼저 확인해야 합니다." : "일반 정발행 기준으로 처리합니다."}</p></div></div>)}
+        {detailTab === "billing" && (<div className="maintenanceDetailGrid"><div className="detailBlock"><h4>청구 방식</h4><dl><DetailTerm label="발행 방식" value={selectedContract.billingMethod}/><DetailTerm label="발행 주기" value={selectedContract.billingCycle}/><DetailTerm label="발행일" value={selectedContract.billingDueRule}/><DetailTerm label="처리 상태" value={selectedContract.billingStatus}/><DetailTerm label="처리 기준" value={selectedContract.billingProgress}/><DetailTerm label="XML 업로드" value={selectedContract.xmlUploadRequired ? "필요" : "불필요"}/><DetailTerm label="필요 서류" value={selectedContract.requiredDocuments.join(', ') || '없음'}/></dl></div><div className="detailBlock"><h4>처리 주의사항</h4><p>{selectedContract.billingMethod === "정발행 후 XML 업로드" ? "5월까지 청구 처리는 완료된 것으로 보고, 6월 정발행 완료 후 XML 파일을 고객사 시스템에 업로드해야 합니다." : selectedContract.billingMethod === "역발행" ? "5월까지 청구 처리는 완료된 것으로 보고, 6월 고객사 포털의 역발행 요청 여부를 먼저 확인해야 합니다." : "5월까지 청구 처리는 완료된 것으로 보고, 6월분 일반 정발행 기준으로 처리합니다."}</p></div></div>)}
         {detailTab === "contacts" && (<div className="contactCards">{selectedContract.contacts.map((contact) => <article key={`${contact.email}-${contact.contactType}`}><strong>{contact.contactName}</strong><span>{contact.companyName} · {contact.contactType}</span><p>{contact.department} / {contact.position}</p><p>{contact.email} · {contact.phone}</p></article>)}</div>)}
-        {detailTab === "memo" && (<div className="detailBlock wide"><h4>메모/파일</h4><p>{selectedContract.memo}</p><ul className="fileMockList"><li>계약서 파일: 업로드 필요</li><li>견적서 파일: 업로드 필요</li><li>검수확인서 양식: 고객사별 등록 필요</li></ul></div>)}
+        {detailTab === "memo" && (<div className="detailBlock wide"><h4>메모</h4><p>{selectedContract.memo}</p></div>)}
       </section>)}
     </div>);
 }
