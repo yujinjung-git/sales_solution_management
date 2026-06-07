@@ -145,7 +145,7 @@ const headerCopy = {
     },
     maintenanceContracts: {
         title: "유지보수 계약관리",
-        description: "유지보수 엑셀 데이터를 기반으로 계약 만료, 청구 방식, 제품별 고객사, 파트너사를 관리합니다.",
+        description: "",
     },
     recommendedActions: {
         title: "추천 액션",
@@ -1067,9 +1067,9 @@ function MaintenanceContractsView() {
     return (<div className="maintenancePage">
       <section className="maintenanceHero">
         <div>
-          <p className="eyebrow">유지보수 계약 데이터 · 기준일 {maintenanceGeneratedAt}</p>
+          <p className="eyebrow">유지보수 계약관리 · 기준일 {maintenanceGeneratedAt}</p>
           <h2>유지보수 계약관리</h2>
-          <p>계약 만료, 6월 청구 처리, 제품/수량, 주요 파트너사 현황을 한 화면에서 확인합니다.</p>
+
         </div>
         <div className="maintenanceHeroBadge">
           <strong>{formatCurrency(maintenanceContracts.reduce((sum, item) => sum + item.totalAmount, 0))}</strong>
@@ -1120,12 +1120,30 @@ function MaintenanceContractsView() {
               <span>{partner.label}</span><strong>{partner.count}건</strong><small>{formatCurrency(partner.amount)} · End-User {partner.endUserCount}곳</small>
             </button>))}
           </div>
-          <h3>제품별 고객관리</h3>
-          <div className="productSummaryList">
-            {productSummary.slice(0, 5).map((product) => (<div key={product.productName}><span>{product.productName}</span><strong>{product.count}건</strong><small>고객 {product.customerCount}곳 · 수량 {formatNumber(product.quantity)}</small></div>))}
-          </div>
         </aside>
       </div>
+
+      <section className="maintenancePanel maintenanceProductPanel">
+        <div className="maintenancePanelHeader">
+          <div>
+            <h3>제품별 고객관리</h3>
+            <p>제품 기준으로 계약 건수, 고객사 수, 수량을 확인합니다.</p>
+          </div>
+          <span>{productSummary.length}개 제품</span>
+        </div>
+        <div className="maintenanceTableWrap productTableWrap">
+          <table className="maintenanceTable productManagementTable">
+            <thead><tr><th>제품명</th><th>계약 건수</th><th>고객사 수</th><th>총 수량</th><th>주요 고객사</th></tr></thead>
+            <tbody>{productSummary.map((product) => (<tr key={product.productName}>
+              <td><strong>{product.productName}</strong></td>
+              <td>{product.count}건</td>
+              <td>{product.customerCount}곳</td>
+              <td>{formatNumber(product.quantity)}</td>
+              <td>{Array.from(product.customers).slice(0, 5).join(", ") || "미확인"}</td>
+            </tr>))}</tbody>
+          </table>
+        </div>
+      </section>
 
       {selectedContract && (<section className="maintenancePanel maintenanceDetailPanel">
         <div className="maintenancePanelHeader">

@@ -1,4 +1,40 @@
+@font-face {
+  font-family: "Daki M Title";
+  src: local("Daki M Title"), local("DakiMTitle"), url("../fonts/DakiMTitle.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Daki B";
+  src: local("Daki B"), local("DakiB"), url("../fonts/DakiB.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Daki M";
+  src: local("Daki M"), local("DakiM"), url("../fonts/DakiM.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Daki L";
+  src: local("Daki L"), local("DakiL"), url("../fonts/DakiL.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
+  --font-title-daki: "Daki M Title", "Daki M", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  --font-emphasis-daki: "Daki B", "Daki M", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  --font-body-daki: "Daki M", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  --font-light-daki: "Daki L", "Daki M", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
   --page: #f4f6f8;
   --panel: #ffffff;
   --ink: #17202a;
@@ -22,7 +58,7 @@ body {
   margin: 0;
   background: var(--page);
   color: var(--ink);
-  font-family: "Segoe UI", "Malgun Gothic", Arial, sans-serif;
+  font-family: var(--font-body-daki);
   letter-spacing: 0;
   overflow-x: auto;
 }
@@ -3631,54 +3667,6 @@ button.riskItem {
   }
 }
 
-/* Daki font mapping requested for maintenance UI. Font files are not bundled in this project; these family names apply when the Daki fonts are installed or provided by the browser environment. */
-:root {
-  --font-title-daki: "Daki M Title", "Daki M", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
-  --font-emphasis-daki: "Daki B", "Daki M", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
-  --font-body-daki: "Daki M", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
-  --font-light-daki: "Daki L", "Daki M", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
-}
-
-body,
-button,
-input,
-select,
-textarea {
-  font-family: var(--font-body-daki);
-}
-
-h1, h2, h3, h4,
-.loginIntroCopy h1,
-.viewHeader h1,
-.maintenanceHero h2,
-.maintenancePanelHeader h3,
-.sidebarBrand,
-.loginBrand {
-  font-family: var(--font-title-daki);
-}
-
-strong,
-b,
-th,
-button,
-.maintenanceKpiCard strong,
-.maintenanceHeroBadge strong,
-.amountCards strong,
-.maintenanceStatus {
-  font-family: var(--font-emphasis-daki);
-}
-
-small,
-.panelHint,
-.cardDescription,
-.maintenanceHero p,
-.maintenancePanelHeader p,
-.maintenanceTable small,
-.productSummaryList small,
-.partnerList small {
-  font-family: var(--font-light-daki);
-}
-
 .monthRevenueStrip span.completed {
   background: #eef8f3;
   border-color: #bbebcf;
@@ -3689,4 +3677,39 @@ small,
   background: #eff6ff;
   border-color: #bfdbfe;
   color: #1d4ed8;
+}
+
+/* Maintenance contract refinements */
+.maintenanceProductPanel {
+  margin-top: 16px;
+}
+
+.productTableWrap {
+  max-height: 340px;
+}
+
+.productManagementTable td:nth-child(2),
+.productManagementTable td:nth-child(3),
+.productManagementTable td:nth-child(4) {
+  white-space: nowrap;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+
+/* Daki typography application */
+body, button, input, select, textarea {
+  font-family: var(--font-body-daki);
+}
+
+h1, h2, h3, h4, .brand strong, .sidebarBrand, .loginBrand, .viewHeader h1, .maintenanceHero h2, .maintenancePanelHeader h3 {
+  font-family: var(--font-title-daki);
+}
+
+strong, b, th, .primaryButton, .secondaryButton, .navItem.active, .maintenanceKpiCard strong, .amountCards strong, .maintenanceStatus, .partnerList strong {
+  font-family: var(--font-emphasis-daki);
+}
+
+small, .topbarDescription, .panelHint, .cardDescription, .maintenanceHero p, .maintenancePanelHeader p, .maintenanceTable small, .partnerList small {
+  font-family: var(--font-light-daki);
 }
